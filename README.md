@@ -1,9 +1,6 @@
 # amakomi-lp
-Public 
-cd /workspaces/amakomi-lp && \
-git pull && \
-cp "amakomi_lp_final (1).html" index.html && \
-git add index.html && \
-git rm "amakomi_lp_final (1).html" && \
-git commit -m "index.html に修正" && \
-git push
+
+「あまかみ 自分史の輪」1期生募集ページ。
+
+- `index.html` … 募集ページ本体（1ファイルで完結。画像なし）
+- 申込・説明会の予約は Google フォーム（https://forms.gle/5kcE3Bubw93mpwW46）

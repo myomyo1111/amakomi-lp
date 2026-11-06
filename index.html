@@ -1,1607 +1,255 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>💫 夢を叶える AIで勝ち組へ | 白澤さんの無料AI戦略セミナー</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="全8回で、あなたの自分史をKindleの電子書籍として出版するところまで、仲間と一緒に伴走する講座。1期は2027年1月16日（土）スタート、5〜8名限定。無料説明会は12/5・12/10・12/17。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="自分史の輪 1期生募集｜あなたの人生を、1冊の本にしませんか。">
+<meta property="og:description" content="全8回で、あなたの自分史をKindleの電子書籍として出版するところまで、仲間と一緒に伴走する講座。1期は2027年1月16日（土）スタート、5〜8名限定。無料説明会は12/5・12/10・12/17。">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800;900&family=Noto+Sans+JP:wght@400;700;900&display=swap');
+  /* ページの土台：余白をそろえ、スマホの端にも対応 */
+  html{-webkit-text-size-adjust:100%}
+  :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+  body{margin:0}
+  img{max-width:100%}
+  a:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+</style>
+<title>自分史の輪 1期生募集</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+  /* Layout: お客様向けの募集ページ。物語→中身→条件→申込の順に縦に読ませる */
+  :root{
+    --bg:#F6F4EF; --surface:#FFFFFF; --surface-2:#EFEBE2;
+    --fg:#22252B; --muted:#6A6256; --line:#E0DACD;
+    --indigo:#234B78; --indigo-soft:#E6EEF6; --hero:#16345A;
+    --gold:#B07722; --gold-soft:#F3E8D2;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#15181D; --surface:#1E222A; --surface-2:#242933;
+      --fg:#ECE7DD; --muted:#A49C8D; --line:#333A45;
+      --indigo:#7FB0DD; --indigo-soft:#1E2E40; --hero:#12294A;
+      --gold:#E0A84E; --gold-soft:#332814;
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#15181D; --surface:#1E222A; --surface-2:#242933;
+    --fg:#ECE7DD; --muted:#A49C8D; --line:#333A45;
+    --indigo:#7FB0DD; --indigo-soft:#1E2E40; --hero:#12294A;
+    --gold:#E0A84E; --gold-soft:#332814;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--bg); color:var(--fg);
+    font-family:"Zen Kaku Gothic New",-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif;
+    line-height:1.85; font-size:16px; letter-spacing:.01em;}
+  .wrap{max-width:720px; margin-inline:auto;
+    padding-left:max(20px,env(safe-area-inset-left,0px));
+    padding-right:max(20px,env(safe-area-inset-right,0px));}
+  h1,h2,h3{font-family:"Shippori Mincho","Hiragino Mincho ProN",serif; text-wrap:balance; line-height:1.45;}
+  .eyebrow{font-size:12px; letter-spacing:.22em; color:var(--gold); font-weight:700; margin:0 0 10px;}
 
-:root {
-  --pink: #FF6B9D;
-  --pink2: #FF4499;
-  --pink-light: #FFB3D1;
-  --pink-pale: #fff0f6;
-  --gold: #F5C842;
-  --gold2: #FFE082;
-  --gold-glow: rgba(245,200,66,0.6);
-  --navy: #050510;
-  --navy2: #0A0A1E;
-  --navy3: #0F0F2D;
-  --blue-star: #A8CCFF;
-  --teal-star: #80FFD4;
-  --white: #FFFEF8;
-  --font: 'M PLUS Rounded 1c','Noto Sans JP',sans-serif;
-}
+  .hero{background:radial-gradient(circle at 88% -10%, rgba(224,168,78,.55), transparent 55%), radial-gradient(circle at 0% 110%, rgba(224,168,78,.18), transparent 45%), var(--hero); color:#fff;}
+  .hero .wrap{padding-block:60px 52px;}
+  .hero .eyebrow{color:#E7C98A;}
+  .hero h1{font-size:clamp(28px,6vw,46px); font-weight:800; margin:0 0 18px; color:#fff;}
+  .hero h1 span{color:#F0D9A6;}
+  .hero p{margin:0; color:#DCE5EF; font-size:16.5px;}
+  .badges{display:flex; flex-wrap:wrap; gap:8px; margin-top:24px;}
+  .badges span{background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.22); border-radius:999px; padding:6px 14px; font-size:13px;}
 
-* { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-body { font-family:var(--font); background:var(--navy); color:#fff; overflow-x:hidden; }
+  section{padding-block:48px;}
+  section.alt{background:var(--surface-2);}
+  h2{font-size:clamp(22px,4vw,29px); font-weight:800; margin:0 0 14px;}
+  p{margin:0 0 14px;}
+  .muted{color:var(--muted);}
 
-/* ===== CANVAS BG ===== */
-#cosmosCanvas {
-  position:fixed; top:0; left:0; width:100%; height:100%;
-  z-index:0; pointer-events:none;
-}
+  .letter{font-family:"Shippori Mincho",serif; font-size:17px; line-height:2;}
+  .sign{text-align:right; font-family:"Shippori Mincho",serif; font-weight:700; margin-top:8px;}
 
-/* ===== NEBULA LAYERS ===== */
-.nebula {
-  position:fixed; border-radius:50%; pointer-events:none; z-index:0;
-  animation: nebula-drift 20s ease-in-out infinite alternate;
-}
-.nebula-1 {
-  width:700px; height:700px; top:-200px; left:-200px;
-  background: radial-gradient(ellipse at center, rgba(100,20,150,0.18) 0%, rgba(60,0,120,0.08) 40%, transparent 70%);
-}
-.nebula-2 {
-  width:600px; height:400px; top:30vh; right:-150px;
-  background: radial-gradient(ellipse at center, rgba(255,107,157,0.12) 0%, rgba(180,50,100,0.06) 40%, transparent 70%);
-  animation-delay:-8s;
-}
-.nebula-3 {
-  width:800px; height:500px; bottom:10vh; left:-100px;
-  background: radial-gradient(ellipse at center, rgba(50,80,200,0.15) 0%, rgba(20,40,120,0.07) 40%, transparent 70%);
-  animation-delay:-14s;
-}
-.nebula-4 {
-  width:500px; height:500px; bottom:30vh; right:-100px;
-  background: radial-gradient(ellipse at center, rgba(245,200,66,0.08) 0%, transparent 70%);
-  animation-delay:-5s;
-}
-@keyframes nebula-drift {
-  0% { transform: translate(0,0) scale(1); }
-  100% { transform: translate(30px, 20px) scale(1.05); }
-}
+  .checks{list-style:none; margin:0; padding:0; display:grid; gap:10px;}
+  .checks li{background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:12px 16px 12px 44px; position:relative;}
+  .checks li::before{content:"✓"; position:absolute; left:16px; top:12px; color:var(--gold); font-weight:700;}
 
-/* all content above canvas */
-.page-wrap { position:relative; z-index:1; }
+  .steps{display:grid; gap:10px;}
+  .st{display:grid; grid-template-columns:44px 1fr; gap:12px; align-items:start; background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:14px 16px;}
+  .st .n{width:34px; height:34px; border-radius:50%; background:var(--hero); color:#fff; font-family:"Shippori Mincho",serif; font-weight:700; display:flex; align-items:center; justify-content:center;}
+  .st h3{margin:0 0 2px; font-size:16px;}
+  .st p{margin:0; font-size:14px; color:var(--muted);}
 
-/* ===== HERO ===== */
-.hero {
-  min-height:100vh;
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  padding:60px 20px 80px;
-  position:relative;
-  overflow:hidden;
-}
+  .senpai{background:var(--gold-soft); border-left:5px solid var(--gold); border-radius:6px; padding:18px 20px;}
 
-/* Central glow orb */
-.hero-orb {
-  position:absolute;
-  top:50%; left:50%; transform:translate(-50%,-55%);
-  width:600px; height:600px; border-radius:50%;
-  background: radial-gradient(ellipse at center,
-    rgba(255,107,157,0.18) 0%,
-    rgba(180,50,180,0.10) 30%,
-    rgba(100,30,150,0.05) 55%,
-    transparent 70%);
-  pointer-events:none;
-  animation: orb-pulse 6s ease-in-out infinite alternate;
-}
-@keyframes orb-pulse {
-  0% { transform:translate(-50%,-55%) scale(0.95); opacity:0.8; }
-  100% { transform:translate(-50%,-55%) scale(1.05); opacity:1; }
-}
+  .table-wrap{overflow-x:auto;}
+  table{width:100%; border-collapse:collapse; background:var(--surface); border:1px solid var(--line); border-radius:8px; font-size:15px;}
+  th,td{text-align:left; padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top;}
+  th{width:32%; color:var(--muted); font-weight:700; font-size:14px; background:var(--surface-2);}
+  tr:last-child th, tr:last-child td{border-bottom:none;}
 
-/* Planet accent */
-.hero-planet {
-  position:absolute; bottom:60px; right:8%;
-  width:120px; height:120px; border-radius:50%;
-  background: radial-gradient(ellipse at 35% 30%,
-    #8B6FE8 0%, #5A3ABF 40%, #2A1560 80%, #0F0530 100%);
-  box-shadow:
-    inset -15px -10px 30px rgba(0,0,30,0.6),
-    0 0 40px rgba(138,111,232,0.25),
-    0 0 80px rgba(100,60,200,0.1);
-  animation: planet-float 8s ease-in-out infinite;
-  overflow:hidden;
-}
-.hero-planet::before {
-  content:'';
-  position:absolute; top:35%; left:-10%;
-  width:120%; height:12px;
-  background: rgba(255,255,255,0.06);
-  border-radius:50%;
-  transform: rotate(-15deg);
-}
-.hero-planet::after {
-  content:'';
-  position:absolute; top:52%; left:-10%;
-  width:120%; height:7px;
-  background: rgba(255,255,255,0.04);
-  border-radius:50%;
-  transform: rotate(-15deg);
-}
-@keyframes planet-float {
-  0%,100% { transform:translateY(0) rotate(0deg); }
-  50% { transform:translateY(-18px) rotate(3deg); }
-}
+  .price{background:var(--surface); border:2px solid var(--gold); border-radius:12px; padding:24px; text-align:center;}
+  .price .tag{display:inline-block; background:var(--gold); color:#fff; font-size:12px; font-weight:700; padding:3px 12px; border-radius:999px;}
+  .price .big{font-family:"Shippori Mincho",serif; font-size:clamp(34px,8vw,46px); font-weight:800; margin:10px 0 0; font-variant-numeric:tabular-nums;}
+  .price .big small{font-size:16px; font-weight:500; color:var(--muted);}
+  .price .base{color:var(--muted); font-size:14px; margin:4px 0 0;}
+  .price .reg{font-size:13px; color:var(--muted); margin:12px 0 0;}
 
-/* Ring around planet */
-.planet-ring {
-  position:absolute;
-  bottom:56px; right:calc(8% - 30px);
-  width:180px; height:40px;
-  border:2px solid rgba(180,140,255,0.2);
-  border-radius:50%;
-  transform:rotateX(70deg);
-  pointer-events:none;
-  box-shadow:0 0 20px rgba(180,140,255,0.1);
-}
+  .faq dt{font-weight:700; margin-top:16px;}
+  .faq dt::before{content:"Q. "; color:var(--gold);}
+  .faq dd{margin:4px 0 0; color:var(--muted);}
 
-/* Shooting stars (CSS) */
-.shooting-star {
-  position:absolute; width:120px; height:2px;
-  background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
-  border-radius:2px;
-  animation: shoot var(--dur) ease-in-out infinite;
-  animation-delay: var(--delay);
-  opacity:0;
-}
-@keyframes shoot {
-  0% { opacity:0; transform:translateX(0) translateY(0) rotate(var(--angle)); }
-  5% { opacity:1; }
-  30% { opacity:0; transform:translateX(300px) translateY(80px) rotate(var(--angle)); }
-  100% { opacity:0; transform:translateX(300px) translateY(80px) rotate(var(--angle)); }
-}
+  .apply{background:var(--hero); color:#fff; text-align:center;}
+  .apply h2{color:#fff;}
+  .apply p{color:#DCE5EF;}
+  .flow{display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin:20px 0;}
+  .flow span{background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.22); border-radius:8px; padding:8px 14px; font-size:14px;}
+  .contact{background:rgba(255,255,255,.1); border:1px dashed rgba(255,255,255,.4); border-radius:10px; padding:16px; margin-top:12px; color:#F0D9A6; font-weight:700;}
 
-/* Floating sparkles */
-.sparkle {
-  position:absolute; pointer-events:none;
-  animation:sparkle-anim var(--spd) ease-in-out infinite;
-  animation-delay:var(--sd);
-}
-.sparkle::before {
-  content:'✦';
-  font-size:var(--sz);
-  color:var(--sc);
-  text-shadow:0 0 8px var(--sc);
-}
-@keyframes sparkle-anim {
-  0%,100% { opacity:0.2; transform:scale(0.8) rotate(0deg); }
-  50% { opacity:1; transform:scale(1.3) rotate(180deg); }
-}
-
-.hero-badge {
-  background:linear-gradient(135deg, var(--pink), #FF4488);
-  color:#fff;
-  padding:7px 22px;
-  border-radius:50px;
-  font-size:12px;
-  font-weight:900;
-  letter-spacing:2px;
-  margin-bottom:24px;
-  box-shadow:0 0 30px rgba(255,107,157,0.5);
-  animation:badge-glow 3s ease-in-out infinite alternate;
-  position:relative;
-}
-@keyframes badge-glow {
-  0% { box-shadow:0 0 20px rgba(255,107,157,0.4); }
-  100% { box-shadow:0 0 50px rgba(255,107,157,0.8), 0 0 80px rgba(255,107,157,0.3); }
-}
-
-.hero-eyebrow {
-  font-size:13px; color:var(--blue-star);
-  letter-spacing:3px; text-transform:uppercase;
-  margin-bottom:16px; opacity:0.8;
-}
-
-.hero-title {
-  font-size:clamp(28px,7.5vw,58px);
-  font-weight:900; text-align:center; line-height:1.35;
-  margin-bottom:16px;
-}
-.hero-title .line-1 { color:#fff; }
-.hero-title .line-2 {
-  background:linear-gradient(135deg, var(--gold), #FFD060, var(--gold));
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-  background-clip:text;
-  filter:drop-shadow(0 0 20px rgba(245,200,66,0.5));
-  display:block;
-}
-.hero-title .line-3 { color:var(--pink-light); display:block; }
-
-.hero-divider {
-  width:100px; height:2px;
-  background:linear-gradient(90deg,transparent,var(--pink),var(--gold),var(--pink),transparent);
-  margin:20px auto;
-  border-radius:2px;
-}
-
-.hero-catch {
-  max-width:520px; text-align:center;
-  font-size:clamp(14px,3.5vw,17px); line-height:2;
-  color:rgba(255,255,255,0.8);
-  margin-bottom:36px;
-}
-.hero-catch .gold { color:var(--gold); font-weight:800; }
-.hero-catch .pink { color:var(--pink-light); font-weight:800; }
-
-.hero-cta {
-  display:inline-block;
-  background:linear-gradient(135deg, #FF4499, var(--pink), #FF7733);
-  color:#fff;
-  font-family:var(--font);
-  font-size:clamp(15px,4vw,20px);
-  font-weight:900;
-  padding:18px 48px;
-  border-radius:50px;
-  text-decoration:none;
-  border:none; cursor:pointer;
-  box-shadow:0 0 0 0 rgba(255,107,157,0);
-  animation:cta-glow 2.5s ease-in-out infinite;
-  transition:transform 0.2s;
-}
-@keyframes cta-glow {
-  0%,100% { box-shadow:0 6px 30px rgba(255,68,153,0.5); }
-  50% { box-shadow:0 6px 50px rgba(255,68,153,0.8), 0 0 80px rgba(255,68,153,0.3); }
-}
-.hero-cta:hover { transform:translateY(-4px) scale(1.03); }
-
-.hero-scroll-hint {
-  position:absolute; bottom:30px; left:50%; transform:translateX(-50%);
-  display:flex; flex-direction:column; align-items:center; gap:6px;
-  font-size:11px; color:rgba(255,255,255,0.35); letter-spacing:2px;
-}
-.scroll-arrow {
-  width:18px; height:18px; border-right:2px solid rgba(255,255,255,0.3);
-  border-bottom:2px solid rgba(255,255,255,0.3);
-  transform:rotate(45deg);
-  animation:bounce-arrow 1.8s ease-in-out infinite;
-}
-@keyframes bounce-arrow {
-  0%,100% { transform:rotate(45deg) translateY(0); opacity:0.3; }
-  50% { transform:rotate(45deg) translateY(5px); opacity:0.8; }
-}
-
-/* ===== WAVE ===== */
-.wave { line-height:0; overflow:hidden; }
-.wave svg { display:block; width:100%; }
-
-/* ===== SECTION COMMON ===== */
-section { position:relative; overflow:hidden; }
-.section-inner { max-width:700px; margin:0 auto; padding:70px 20px; }
-
-.section-star-label {
-  display:flex; align-items:center; gap:10px; justify-content:center;
-  margin-bottom:10px;
-}
-.section-star-label::before,.section-star-label::after {
-  content:''; flex:1; max-width:60px; height:1px;
-  background:linear-gradient(90deg,transparent,rgba(255,107,157,0.5));
-}
-.section-star-label::after {
-  background:linear-gradient(90deg,rgba(255,107,157,0.5),transparent);
-}
-.star-label-text { font-size:11px; color:var(--pink-light); letter-spacing:3px; font-weight:700; }
-
-.section-heading {
-  font-size:clamp(22px,5.5vw,36px); font-weight:900;
-  text-align:center; margin-bottom:6px; color:#fff;
-}
-.section-heading .gold-word {
-  background:linear-gradient(135deg,var(--gold),#FFD060);
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-.section-sub { text-align:center; font-size:13px; color:rgba(255,255,255,0.4); margin-bottom:40px; }
-
-/* ===== PROBLEM SECTION ===== */
-.problem-bg {
-  background:linear-gradient(180deg, var(--navy) 0%, #080820 100%);
-}
-.problem-cards {
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
-  gap:14px;
-}
-.p-card {
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,107,157,0.2);
-  border-radius:18px; padding:22px 20px;
-  display:flex; align-items:flex-start; gap:14px;
-  backdrop-filter:blur(8px);
-  transition:transform 0.2s, box-shadow 0.2s;
-}
-.p-card:hover {
-  transform:translateY(-4px);
-  box-shadow:0 8px 30px rgba(255,107,157,0.15);
-}
-.p-card .ico { font-size:28px; flex-shrink:0; }
-.p-card .txt { font-size:14px; line-height:1.8; color:rgba(255,255,255,0.8); font-weight:700; }
-.p-card .txt em { color:var(--pink-light); font-style:normal; }
-
-/* ===== MANGA SECTION ===== */
-.manga-bg {
-  background: linear-gradient(180deg,#080820 0%, #0D0A28 100%);
-}
-
-/* MANGA STRIP */
-.manga-strip {
-  max-width:600px; margin:0 auto 28px;
-  border:2.5px solid rgba(255,255,255,0.15);
-  border-radius:20px; overflow:hidden;
-  box-shadow:
-    0 0 0 1px rgba(255,107,157,0.1),
-    0 20px 60px rgba(0,0,0,0.5),
-    inset 0 1px 0 rgba(255,255,255,0.08);
-}
-
-.s-panel {
-  padding:22px 20px;
-  border-bottom:1.5px solid rgba(255,255,255,0.08);
-  display:flex; align-items:center; gap:14px;
-  min-height:105px;
-  position:relative;
-}
-.s-panel:last-child { border-bottom:none; }
-
-.s-panel.night {
-  background:linear-gradient(135deg, #08081A, #12102A);
-}
-.s-panel.day {
-  background:linear-gradient(135deg, #0E1828, #182240);
-}
-.s-panel.bright {
-  background:linear-gradient(135deg, #1A1040, #0E1830);
-}
-.s-panel.ai-room {
-  background:linear-gradient(135deg, #050E20, #091428);
-}
-
-/* face css art */
-.face {
-  width:54px; height:54px; border-radius:50%;
-  flex-shrink:0; position:relative;
-  border:2px solid rgba(255,255,255,0.2);
-}
-.face-guy {
-  background:radial-gradient(circle at 40% 35%, #DBA870, #B87840);
-}
-.face-guy::before {
-  content:''; position:absolute;
-  top:50%; left:50%; transform:translate(-50%,-50%);
-  font-size:0;
-}
-.face-mentor {
-  background:radial-gradient(circle at 40% 35%, #C4D0E8, #8FAACF);
-}
-.eyes-tired::after {
-  content:'T_T'; position:absolute;
-  top:50%; left:50%; transform:translate(-50%,-50%);
-  font-size:12px; font-weight:800; color:#5A3010;
-  font-family:monospace;
-}
-.eyes-shock::after {
-  content:'o_o'; position:absolute;
-  top:50%; left:50%; transform:translate(-50%,-50%);
-  font-size:12px; font-weight:800; color:#2A1A5A;
-  font-family:monospace;
-}
-.eyes-calm::after {
-  content:'^‿^'; position:absolute;
-  top:50%; left:50%; transform:translate(-50%,-50%);
-  font-size:11px; font-weight:800; color:#1A2A5A;
-  font-family:monospace;
-}
-.eyes-wow::after {
-  content:'@_@'; position:absolute;
-  top:50%; left:50%; transform:translate(-50%,-50%);
-  font-size:11px; font-weight:800; color:#2A1A3A;
-  font-family:monospace;
-}
-.sweat {
-  position:absolute; top:-6px; right:-6px;
-  font-size:14px;
-}
-
-/* Bubbles */
-.bbl {
-  border-radius:16px; padding:11px 15px;
-  font-size:13px; font-weight:700; line-height:1.75;
-  flex:1;
-}
-.bbl-white {
-  background:rgba(255,255,255,0.93); color:#1A1040;
-  border:2px solid rgba(255,255,255,0.15);
-  box-shadow:0 4px 20px rgba(0,0,0,0.3);
-}
-.bbl-pink {
-  background:linear-gradient(135deg, rgba(255,107,157,0.9), rgba(220,50,120,0.85));
-  color:#fff;
-  box-shadow:0 4px 20px rgba(255,68,153,0.4);
-}
-.bbl-gold {
-  background:linear-gradient(135deg, rgba(245,200,66,0.9), rgba(220,160,30,0.85));
-  color:#2A1800;
-  box-shadow:0 4px 20px rgba(245,200,66,0.3);
-}
-.bbl-dark {
-  background:rgba(255,255,255,0.08); color:rgba(255,255,255,0.9);
-  border:1px solid rgba(255,255,255,0.12);
-  font-style:italic;
-}
-.bbl em { color:var(--pink); font-style:normal; }
-.bbl-gold em { color:#7A4A00; }
-.bbl-pink em { color:#FFE0F0; }
-.bbl-dark em { color:var(--gold2); }
-
-/* AI scene inside panel */
-.ai-scene {
-  flex:1; display:flex; flex-direction:column; align-items:center; gap:10px;
-}
-.ai-monitor {
-  width:100px; height:65px;
-  border:1.5px solid rgba(0,180,255,0.5);
-  border-radius:8px;
-  background:rgba(0,60,120,0.4);
-  display:flex; align-items:center; justify-content:center;
-  font-size:22px;
-  box-shadow:0 0 20px rgba(0,150,255,0.25), inset 0 0 15px rgba(0,100,200,0.2);
-  animation:monitor-glow 2s ease-in-out infinite alternate;
-}
-@keyframes monitor-glow {
-  0% { box-shadow:0 0 10px rgba(0,150,255,0.2); }
-  100% { box-shadow:0 0 30px rgba(0,180,255,0.5), 0 0 60px rgba(0,150,255,0.15); }
-}
-.ai-tags {
-  display:flex; gap:6px; flex-wrap:wrap; justify-content:center;
-}
-.ai-tag {
-  background:rgba(0,120,255,0.2);
-  border:1px solid rgba(0,180,255,0.35);
-  color:#7DDFFF;
-  font-size:10px; font-weight:800;
-  padding:3px 9px; border-radius:6px;
-  letter-spacing:1px;
-  animation:tag-pulse 3s ease-in-out infinite alternate;
-}
-.ai-tag:nth-child(2) { animation-delay:0.5s; }
-.ai-tag:nth-child(3) { animation-delay:1s; }
-@keyframes tag-pulse {
-  0% { opacity:0.6; }
-  100% { opacity:1; border-color:rgba(0,200,255,0.6); }
-}
-
-/* LINE button in panel */
-.line-btn-mini {
-  background:#00C300;
-  color:#fff; font-size:12px; font-weight:900;
-  padding:8px 18px; border-radius:10px;
-  box-shadow:0 4px 15px rgba(0,180,0,0.4);
-  letter-spacing:1px;
-}
-
-/* ===== HOOK ===== */
-.hook-bg {
-  background:linear-gradient(160deg, #0D0A28 0%, #080020 40%, #100820 100%);
-}
-.hook-center {
-  text-align:center;
-}
-.hook-vs {
-  display:flex; align-items:center; justify-content:center;
-  gap:16px; flex-wrap:wrap; margin:24px 0;
-}
-.vs-item {
-  padding:12px 22px; border-radius:14px;
-  font-size:14px; font-weight:900; line-height:1.5;
-}
-.vs-item.bad {
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.1);
-  color:rgba(255,255,255,0.45);
-  text-decoration:line-through;
-}
-.vs-item.good {
-  background:linear-gradient(135deg,rgba(245,200,66,0.2),rgba(255,180,0,0.1));
-  border:1px solid rgba(245,200,66,0.4);
-  color:var(--gold2);
-  box-shadow:0 0 20px rgba(245,200,66,0.15);
-}
-.vs-arrow { font-size:24px; color:rgba(255,255,255,0.2); }
-.hook-big {
-  font-size:clamp(20px,5vw,34px); font-weight:900; line-height:1.5;
-  color:#fff; margin-top:24px;
-}
-.hook-big .gold {
-  background:linear-gradient(135deg,var(--gold),#FFD060);
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-.hook-big .pink { color:var(--pink-light); }
-
-/* ===== BENEFIT ===== */
-.benefit-bg {
-  background:linear-gradient(180deg, #080020 0%, #0D0A28 100%);
-}
-.benefit-list {
-  max-width:600px; margin:0 auto;
-  display:flex; flex-direction:column; gap:14px;
-}
-.b-item {
-  display:flex; align-items:flex-start; gap:16px;
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,107,157,0.15);
-  border-left:3px solid var(--pink);
-  border-radius:0 16px 16px 0;
-  padding:18px 20px;
-  transition:transform 0.2s, box-shadow 0.2s;
-}
-.b-item:nth-child(2) { border-left-color:var(--gold); }
-.b-item:nth-child(3) { border-left-color:#80FFD4; }
-.b-item:nth-child(4) { border-left-color:#A0A0FF; }
-.b-item:hover {
-  transform:translateX(6px);
-  box-shadow:0 4px 20px rgba(255,107,157,0.12);
-}
-.b-num {
-  width:36px; height:36px; border-radius:50%; flex-shrink:0;
-  background:linear-gradient(135deg,var(--pink),#FF7733);
-  display:flex; align-items:center; justify-content:center;
-  font-size:15px; font-weight:900; color:#fff;
-  box-shadow:0 3px 12px rgba(255,107,157,0.4);
-}
-.b-item:nth-child(2) .b-num { background:linear-gradient(135deg,var(--gold),#FFA040); box-shadow:0 3px 12px rgba(245,200,66,0.4); }
-.b-item:nth-child(3) .b-num { background:linear-gradient(135deg,#40FFB0,#00D080); box-shadow:0 3px 12px rgba(64,255,176,0.3); }
-.b-item:nth-child(4) .b-num { background:linear-gradient(135deg,#9090FF,#5050DD); box-shadow:0 3px 12px rgba(144,144,255,0.3); }
-.b-text { font-size:14px; line-height:1.8; color:rgba(255,255,255,0.85); }
-.b-text strong { color:#fff; }
-.b-tag {
-  display:inline-block;
-  background:rgba(245,200,66,0.15); border:1px solid rgba(245,200,66,0.3);
-  color:var(--gold2); font-size:10px; font-weight:800;
-  padding:2px 10px; border-radius:6px; margin-bottom:5px; letter-spacing:1px;
-}
-
-/* ===== PROFILE ===== */
-.profile-bg {
-  background:linear-gradient(160deg, #0D0A28 0%, #060310 100%);
-}
-.profile-card {
-  max-width:560px; margin:0 auto;
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,107,157,0.2);
-  border-radius:28px; padding:36px 28px;
-  text-align:center;
-  box-shadow:0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,107,157,0.05);
-  position:relative; overflow:hidden;
-}
-.profile-card::before {
-  content:'';
-  position:absolute; top:-80px; right:-80px;
-  width:250px; height:250px; border-radius:50%;
-  background:radial-gradient(circle, rgba(255,107,157,0.12), transparent 70%);
-  pointer-events:none;
-}
-.profile-card::after {
-  content:'';
-  position:absolute; bottom:-80px; left:-80px;
-  width:200px; height:200px; border-radius:50%;
-  background:radial-gradient(circle, rgba(245,200,66,0.08), transparent 70%);
-  pointer-events:none;
-}
-.profile-avatar {
-  width:90px; height:90px; border-radius:50%; margin:0 auto 16px;
-  background:linear-gradient(135deg,var(--pink),var(--gold));
-  display:flex; align-items:center; justify-content:center; font-size:40px;
-  box-shadow:0 0 0 4px rgba(255,107,157,0.2), 0 0 30px rgba(255,107,157,0.3);
-  position:relative; z-index:1;
-}
-.profile-name {
-  font-size:22px; font-weight:900; color:#fff; margin-bottom:4px;
-  position:relative; z-index:1;
-}
-.profile-role { font-size:13px; color:var(--pink-light); margin-bottom:20px; z-index:1; position:relative; }
-.profile-tags {
-  display:flex; flex-wrap:wrap; gap:8px; justify-content:center;
-  margin-bottom:20px; position:relative; z-index:1;
-}
-.p-tag {
-  background:rgba(255,107,157,0.15); border:1px solid rgba(255,107,157,0.3);
-  color:var(--pink-light); padding:5px 14px; border-radius:20px;
-  font-size:12px; font-weight:700;
-}
-.profile-result {
-  background:linear-gradient(135deg, rgba(245,200,66,0.12), rgba(255,160,0,0.06));
-  border:1px solid rgba(245,200,66,0.3);
-  border-radius:16px; padding:16px; margin-bottom:16px;
-  position:relative; z-index:1;
-}
-.result-big {
-  font-size:34px; font-weight:900;
-  background:linear-gradient(135deg,var(--gold),#FFD060);
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
-}
-.result-label { font-size:12px; color:rgba(255,255,255,0.5); margin-top:4px; }
-.profile-desc { font-size:13px; color:rgba(255,255,255,0.6); line-height:2; position:relative; z-index:1; }
-
-/* ===== CTA ===== */
-.cta-bg {
-  background:linear-gradient(160deg, #060310 0%, #100820 40%, #050510 100%);
-}
-/* Aurora glow behind CTA */
-.cta-aurora {
-  position:absolute; top:50%; left:50%;
-  transform:translate(-50%,-50%);
-  width:800px; height:400px;
-  background:radial-gradient(ellipse at center,
-    rgba(255,107,157,0.15) 0%,
-    rgba(180,50,255,0.08) 30%,
-    rgba(100,30,200,0.04) 60%,
-    transparent 80%);
-  pointer-events:none;
-  border-radius:50%;
-  animation:aurora-pulse 8s ease-in-out infinite alternate;
-}
-@keyframes aurora-pulse {
-  0% { transform:translate(-50%,-50%) scale(0.9); opacity:0.7; }
-  100% { transform:translate(-50%,-50%) scale(1.1); opacity:1; }
-}
-
-.cta-free {
-  display:inline-block;
-  background:linear-gradient(135deg,var(--gold),#FFA040);
-  color:#2A1800; font-size:14px; font-weight:900;
-  padding:7px 24px; border-radius:30px; margin-bottom:20px;
-  box-shadow:0 4px 20px rgba(245,200,66,0.4);
-  letter-spacing:2px;
-  position:relative; z-index:1;
-}
-.cta-title {
-  font-size:clamp(24px,6vw,44px); font-weight:900;
-  line-height:1.4; margin-bottom:12px; text-align:center;
-  position:relative; z-index:1;
-}
-.cta-title .gold {
-  background:linear-gradient(135deg,var(--gold),#FFD060);
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
-  filter:drop-shadow(0 0 15px rgba(245,200,66,0.4));
-}
-.cta-title .pink { color:var(--pink-light); }
-.cta-sub {
-  font-size:15px; color:rgba(255,255,255,0.6); margin-bottom:30px;
-  text-align:center; position:relative; z-index:1;
-}
-
-/* countdown */
-.countdown {
-  display:flex; gap:12px; justify-content:center; margin-bottom:30px;
-  position:relative; z-index:1;
-}
-.cd-unit {
-  background:rgba(255,255,255,0.07);
-  border:1px solid rgba(255,107,157,0.25);
-  border-radius:14px; padding:12px 16px; min-width:64px; text-align:center;
-  backdrop-filter:blur(8px);
-}
-.cd-num { font-size:28px; font-weight:900; color:#fff; line-height:1; }
-.cd-lbl { font-size:10px; color:rgba(255,255,255,0.4); margin-top:3px; letter-spacing:1px; }
-
-.checklist {
-  max-width:420px; margin:0 auto 30px;
-  display:flex; flex-direction:column; gap:11px;
-  position:relative; z-index:1;
-}
-.check-row {
-  display:flex; align-items:center; gap:12px;
-  font-size:14px; font-weight:700; color:rgba(255,255,255,0.85);
-}
-.check-circle {
-  width:24px; height:24px; border-radius:50%; flex-shrink:0;
-  background:linear-gradient(135deg,var(--pink),#FF7733);
-  display:flex; align-items:center; justify-content:center;
-  font-size:12px; color:#fff;
-  box-shadow:0 2px 10px rgba(255,107,157,0.4);
-}
-
-.cta-btn {
-  display:inline-block;
-  background:linear-gradient(135deg, #FF2299, var(--pink), #FF6644);
-  color:#fff; font-family:var(--font);
-  font-size:clamp(15px,4vw,20px); font-weight:900;
-  padding:20px 54px; border-radius:50px;
-  border:none; cursor:pointer;
-  animation:cta-glow 2.5s ease-in-out infinite;
-  transition:transform 0.2s;
-  position:relative; z-index:1;
-  text-decoration:none;
-}
-.cta-btn:hover { transform:translateY(-4px) scale(1.03); }
-
-.cta-line {
-  max-width:400px; margin:24px auto 0;
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.1);
-  border-radius:16px; padding:16px 20px;
-  display:flex; align-items:center; gap:12px;
-  justify-content:center; position:relative; z-index:1;
-}
-.line-ico {
-  width:40px; height:40px; border-radius:10px; background:#00B900;
-  display:flex; align-items:center; justify-content:center;
-  font-size:18px; flex-shrink:0;
-  box-shadow:0 3px 15px rgba(0,185,0,0.4);
-}
-.cta-line-txt { font-size:13px; color:rgba(255,255,255,0.7); line-height:1.7; text-align:left; }
-.cta-note { font-size:11px; color:rgba(255,255,255,0.25); margin-top:16px; position:relative; z-index:1; }
-
-/* ===== FOOTER ===== */
-footer {
-  background:#030308;
-  padding:30px 20px; text-align:center;
-  border-top:1px solid rgba(255,255,255,0.05);
-}
-.footer-logo { font-size:15px; font-weight:900; color:var(--pink-light); margin-bottom:8px; }
-.footer-txt { font-size:11px; color:rgba(255,255,255,0.2); line-height:2.2; }
-.footer-phrase {
-  font-size:13px; color:rgba(255,255,255,0.35);
-  font-style:italic; margin-top:10px; letter-spacing:1px;
-}
-
-/* ===== SCROLL REVEAL ===== */
-.r { opacity:0; transform:translateY(28px); transition:opacity 0.7s ease, transform 0.7s ease; }
-.r.on { opacity:1; transform:translateY(0); }
-.r2 { transition-delay:0.1s; }
-.r3 { transition-delay:0.2s; }
-.r4 { transition-delay:0.3s; }
-
-/* responsive */
-@media(max-width:500px) {
-  .s-panel { flex-direction:column; align-items:flex-start; }
-  .face { align-self:center; }
-  .bbl { width:100%; }
-  .hero-planet { display:none; }
-  .planet-ring { display:none; }
-}
-
-/* ===== AMAKOMI PROFILE SECTION ===== */
-.amakomi-section {
-  background: linear-gradient(170deg, #08041A 0%, #130830 40%, #0D0520 100%);
-  position:relative; overflow:hidden;
-}
-.amakomi-section::before {
-  content:'';
-  position:absolute; top:-150px; left:50%; transform:translateX(-50%);
-  width:900px; height:500px; border-radius:50%;
-  background: radial-gradient(ellipse, rgba(255,107,157,0.10) 0%, transparent 70%);
-  pointer-events:none;
-}
-
-/* Character cutout + info layout */
-.amakomi-layout {
-  max-width:760px; margin:0 auto;
-  display:grid; grid-template-columns:280px 1fr;
-  gap:0; align-items:start;
-}
-@media(max-width:600px){
-  .amakomi-layout { grid-template-columns:1fr; }
-  .amakomi-char-col { display:flex; justify-content:center; }
-}
-
-.amakomi-char-col { position:relative; }
-.amakomi-char-img {
-  width:100%; max-width:280px;
-  /* background-removal via mix-blend-mode layering */
-  mix-blend-mode:screen;
-  filter: drop-shadow(0 0 30px rgba(255,107,157,0.5))
-          drop-shadow(0 0 60px rgba(200,100,255,0.3));
-  animation: char-float 5s ease-in-out infinite;
-  display:block;
-}
-@keyframes char-float {
-  0%,100%{transform:translateY(0);}
-  50%{transform:translateY(-14px);}
-}
-
-/* Aura rings behind char */
-.char-aura {
-  position:absolute; border-radius:50%; pointer-events:none;
-  top:50%; left:50%; transform:translate(-50%,-50%);
-  animation: aura-pulse 4s ease-in-out infinite alternate;
-}
-.char-aura-1 {
-  width:240px; height:240px;
-  background:radial-gradient(circle, rgba(255,107,157,0.25) 0%, transparent 70%);
-}
-.char-aura-2 {
-  width:320px; height:320px;
-  background:radial-gradient(circle, rgba(180,80,255,0.15) 0%, transparent 70%);
-  animation-delay:1s;
-}
-@keyframes aura-pulse {
-  0%{opacity:0.5; transform:translate(-50%,-50%) scale(0.9);}
-  100%{opacity:1; transform:translate(-50%,-50%) scale(1.1);}
-}
-
-/* Info column */
-.amakomi-info {
-  padding:20px 0 20px 24px;
-  display:flex; flex-direction:column; gap:18px;
-}
-@media(max-width:600px){ .amakomi-info { padding:0; } }
-
-.amakomi-name-block {
-  position:relative;
-}
-.amakomi-penname {
-  font-size:11px; letter-spacing:3px; color:var(--pink-light);
-  font-weight:800; margin-bottom:4px;
-}
-.amakomi-name {
-  font-size:clamp(26px,5vw,38px); font-weight:900; color:#fff;
-  line-height:1.2; margin-bottom:4px;
-}
-.amakomi-name .name-ruby {
-  font-size:13px; color:rgba(255,255,255,0.5); font-weight:400;
-  display:block; letter-spacing:2px;
-}
-.amakomi-publisher {
-  font-size:12px; color:var(--gold2); font-weight:700;
-  letter-spacing:1px;
-}
-
-/* Stats row */
-.amakomi-stats {
-  display:flex; gap:10px; flex-wrap:wrap;
-}
-.stat-pill {
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.12);
-  border-radius:30px; padding:6px 14px;
-  font-size:12px; font-weight:800; color:rgba(255,255,255,0.75);
-  white-space:nowrap;
-}
-.stat-pill .num { color:#fff; font-size:15px; }
-.stat-pill.gold-pill { border-color:rgba(245,200,66,0.3); color:var(--gold2); }
-.stat-pill.pink-pill { border-color:rgba(255,107,157,0.3); color:var(--pink-light); }
-
-/* Activity tags */
-.activity-grid {
-  display:flex; flex-wrap:wrap; gap:8px;
-}
-.act-tag {
-  padding:5px 13px; border-radius:8px;
-  font-size:12px; font-weight:800; letter-spacing:0.5px;
-}
-.act-tag.pub { background:rgba(255,107,157,0.15); border:1px solid rgba(255,107,157,0.3); color:var(--pink-light); }
-.act-tag.yt  { background:rgba(255,80,0,0.15);    border:1px solid rgba(255,80,0,0.3);    color:#FF9070; }
-.act-tag.ful { background:rgba(80,220,180,0.12);  border:1px solid rgba(80,220,180,0.3);  color:#80FFD4; }
-.act-tag.com { background:rgba(160,120,255,0.15); border:1px solid rgba(160,120,255,0.3); color:#C8B0FF; }
-.act-tag.sem { background:rgba(245,200,66,0.12);  border:1px solid rgba(245,200,66,0.3);  color:var(--gold2); }
-
-/* Works in progress */
-.wip-list {
-  display:flex; flex-direction:column; gap:7px;
-}
-.wip-item {
-  display:flex; align-items:center; gap:10px;
-  font-size:13px; color:rgba(255,255,255,0.75); font-weight:700;
-}
-.wip-dot {
-  width:6px; height:6px; border-radius:50%; flex-shrink:0;
-  background:linear-gradient(135deg,var(--pink),var(--gold));
-  box-shadow:0 0 8px rgba(255,107,157,0.5);
-}
-
-/* World keyword tags */
-.world-tags {
-  display:flex; flex-wrap:wrap; gap:7px;
-}
-.world-tag {
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,255,255,0.10);
-  border-radius:6px; padding:4px 11px;
-  font-size:11px; color:rgba(255,255,255,0.45);
-  font-weight:700; letter-spacing:1px;
-}
-
-/* Mission block */
-.mission-block {
-  background:rgba(255,107,157,0.07);
-  border:1px solid rgba(255,107,157,0.2);
-  border-radius:16px; padding:18px 20px;
-}
-.mission-label {
-  font-size:10px; letter-spacing:3px; color:var(--pink-light);
-  font-weight:800; margin-bottom:8px;
-}
-.mission-text {
-  font-size:14px; line-height:2; color:rgba(255,255,255,0.85);
-}
-.mission-text .em { color:var(--gold2); font-weight:800; }
-
-/* CORE PHRASE - the big poetic line */
-.core-phrase-wrapper {
-  max-width:760px; margin:50px auto 0;
-  text-align:center; padding:0 20px;
-}
-.core-phrase-label {
-  font-size:11px; letter-spacing:4px; color:rgba(255,255,255,0.3);
-  margin-bottom:20px; font-weight:700;
-}
-.core-phrase {
-  font-size:clamp(22px,5.5vw,42px); font-weight:900;
-  line-height:1.7; letter-spacing:4px;
-  color:#fff;
-  position:relative;
-}
-.core-phrase .cp-line {
-  display:block;
-  animation: cp-appear 0.8s ease both;
-}
-.core-phrase .cp-line:nth-child(1){ animation-delay:0.1s; }
-.core-phrase .cp-line:nth-child(2){ animation-delay:0.25s; }
-.core-phrase .cp-line:nth-child(3){ animation-delay:0.4s; }
-.core-phrase .cp-line:nth-child(4){ animation-delay:0.55s; }
-@keyframes cp-appear{
-  from{ opacity:0; transform:translateY(12px); }
-  to{ opacity:1; transform:translateY(0); }
-}
-.core-phrase .slash { color:rgba(255,107,157,0.5); }
-.core-phrase .gold-line {
-  background:linear-gradient(135deg,var(--gold),#FFE080,var(--pink-light));
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-  background-clip:text;
-  filter:drop-shadow(0 0 20px rgba(245,200,66,0.4));
-}
-.core-phrase .pink-line { color:var(--pink-light); }
-.core-phrase-sub {
-  margin-top:16px; font-size:13px;
-  color:rgba(255,255,255,0.35); letter-spacing:2px; font-style:italic;
-}
-
-/* QR section */
-.qr-section {
-  max-width:400px; margin:40px auto 0;
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,107,157,0.2);
-  border-radius:24px; padding:24px 28px;
-  text-align:center;
-}
-.qr-label { font-size:12px; color:var(--pink-light); font-weight:800; letter-spacing:2px; margin-bottom:6px; }
-.qr-title { font-size:16px; font-weight:900; color:#fff; margin-bottom:16px; line-height:1.5; }
-.qr-img {
-  width:160px; height:160px; border-radius:12px;
-  border:2px solid rgba(255,255,255,0.15);
-  box-shadow:0 8px 30px rgba(0,0,0,0.4);
-}
-.qr-hint { font-size:11px; color:rgba(255,255,255,0.35); margin-top:12px; line-height:1.8; }
-
-/* divider block labels */
-.info-section-label {
-  font-size:10px; letter-spacing:3px; color:rgba(255,255,255,0.3);
-  font-weight:800; margin-bottom:8px; text-transform:uppercase;
-}
-
+  footer{padding-block:24px; color:var(--muted); font-size:12.5px; text-align:center;}
 </style>
 </head>
 <body>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">自分史の輪 ／ 1期生募集</p>
+    <h1>あなたの人生を、<br><span>1冊の本</span>にしませんか。</h1>
+    <p>書いて終わりにしない自分史講座。全8回で、あなたの自分史をKindleの電子書籍として出版するところまで、仲間と一緒に伴走します。</p>
+    <div class="badges">
+      <span>全8回・約4ヶ月</span><span>オンライン50分</span><span>5〜8名限定</span><span>2027年1月16日（土）スタート</span>
+    </div>
+  </div>
+</header>
 
-<canvas id="cosmosCanvas"></canvas>
-<div class="nebula nebula-1"></div>
-<div class="nebula nebula-2"></div>
-<div class="nebula nebula-3"></div>
-<div class="nebula nebula-4"></div>
-
-<div class="page-wrap">
-
-<!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="hero-orb"></div>
-  <div class="hero-planet"></div>
-  <div class="planet-ring"></div>
-
-  <!-- Shooting stars -->
-  <div class="shooting-star" style="top:15%;left:10%;--dur:8s;--delay:0s;--angle:-20deg;"></div>
-  <div class="shooting-star" style="top:25%;left:5%;--dur:11s;--delay:3s;--angle:-25deg;width:80px;"></div>
-  <div class="shooting-star" style="top:60%;right:15%;--dur:9s;--delay:5.5s;--angle:-15deg;width:160px;"></div>
-
-  <!-- Sparkles -->
-  <span class="sparkle" style="top:12%;left:8%;--spd:4s;--sd:0s;--sz:14px;--sc:#FFB3D1;"></span>
-  <span class="sparkle" style="top:18%;right:12%;--spd:5s;--sd:1s;--sz:10px;--sc:#F5C842;"></span>
-  <span class="sparkle" style="top:75%;left:6%;--spd:6s;--sd:2s;--sz:12px;--sc:#80FFD4;"></span>
-  <span class="sparkle" style="top:80%;right:9%;--spd:4.5s;--sd:0.5s;--sz:16px;--sc:#A8CCFF;"></span>
-  <span class="sparkle" style="top:40%;left:4%;--spd:7s;--sd:1.5s;--sz:9px;--sc:#FFB3D1;"></span>
-  <span class="sparkle" style="top:45%;right:5%;--spd:3.5s;--sd:3s;--sz:13px;--sc:#F5C842;"></span>
-
-  <div class="hero-badge r">🔥 期間限定・無料セミナー開催中 🔥</div>
-  <p class="hero-eyebrow r">✦ AI STRATEGY × DREAM LIFE ✦</p>
-  <h1 class="hero-title r">
-    <span class="line-1">頑張ってるのに<br>なぜか伸びない…</span>
-    <span class="line-2">その答えが、ここにある。</span>
-    <span class="line-3">夢を叶える時代が来た💫</span>
-  </h1>
-  <div class="hero-divider r"></div>
-  <p class="hero-catch r">
-    単月<span class="gold">億超え</span>の実績を持つ白澤さんが、<br>
-    AI×戦略で<span class="pink">「勝ち組」</span>になるための<br>
-    たった一つのルールを<strong>無料で</strong>公開します🎁
-  </p>
-  <a href="#cta" class="hero-cta r">💌 今すぐ無料で詳細を受け取る</a>
-
-  <div class="hero-scroll-hint">
-    <span>SCROLL</span>
-    <div class="scroll-arrow"></div>
+<section>
+  <div class="wrap">
+    <p class="eyebrow">はじめに</p>
+    <div class="letter">
+      <p>生まれてから今日まで、あなたが歩いてきた道は、あなたにしか書けない物語です。</p>
+      <p>「いつか書きたい」と思いながら、何から始めればいいか分からない。書きはじめても、途中で止まってしまう。そんな声をたくさん聞いてきました。</p>
+      <p>だから、ひとりで書かなくていい場所をつくりました。毎日30分、仲間と励まし合いながら書き進めて、4ヶ月後には、手に取れるあなたの本が世界に出ています。</p>
+      <p>その本は、いつかご家族や大切な人が、人生の分かれ道で開く一冊になります。そしてKindleで世に出すことで、まだ会ったことのない誰かの勇気にもなります。</p>
+      <p>やればできる。継続は力なり。一緒に、あなたの1冊を生み出しましょう。</p>
+    </div>
+    <p class="sign">主宰　妙高</p>
   </div>
 </section>
 
-<!-- wave -->
-<div class="wave">
-  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:50px;background:#050510;">
-    <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60Z" fill="#080820"/>
-  </svg>
-</div>
-
-<!-- ===== PROBLEM ===== -->
-<section class="problem-bg">
-  <div class="section-inner">
-    <div class="section-star-label r"><span class="star-label-text">✦ RESONANCE ✦</span></div>
-    <h2 class="section-heading r">こんな<span class="gold-word">悩み</span>ない？</h2>
-    <p class="section-sub r">まず、あなたの現在地を確認しよう</p>
-    <div class="problem-cards">
-      <div class="p-card r"><span class="ico">😰</span><div class="txt">毎日必死に働いているのに、<em>全然稼げない</em>…なんで？</div></div>
-      <div class="p-card r r2"><span class="ico">📚</span><div class="txt">勉強しても勉強しても、<em>なぜか結果に繋がらない</em></div></div>
-      <div class="p-card r r3"><span class="ico">🚀</span><div class="txt">周りがどんどん結果を出している、<em>自分だけ取り残されてる気がする</em></div></div>
-      <div class="p-card r r4"><span class="ico">🤖</span><div class="txt">AIって聞くけど、<em>何を学べばいいかさっぱりわからない</em></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- wave -->
-<div class="wave">
-  <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:40px;background:#080820;">
-    <path d="M0,20 C360,50 720,0 1080,25 C1260,38 1380,10 1440,20 L1440,50 L0,50Z" fill="#0D0A28"/>
-  </svg>
-</div>
-
-<!-- ===== MANGA ===== -->
-<section class="manga-bg">
-  <div class="section-inner">
-    <div class="section-star-label r"><span class="star-label-text">✦ STORY ✦</span></div>
-    <h2 class="section-heading r">ある夜の<span class="gold-word">出会い</span></h2>
-    <p class="section-sub r">路上で起きた、人生の分岐点</p>
-
-    <!-- Strip 1 -->
-    <div class="manga-strip r">
-      <div class="s-panel night">
-        <div class="face face-guy eyes-tired"><span class="sweat">💧</span></div>
-        <div class="bbl bbl-white">頑張っているのに、<br><strong>全然稼げない……</strong><br><small style="color:#888;">(SALES REPORTを握りしめて)</small></div>
-      </div>
-      <div class="s-panel night" style="background:linear-gradient(135deg,#101028,#181038);">
-        <div class="face face-guy eyes-shock"><span class="sweat">💦</span></div>
-        <div class="bbl bbl-dark">このままじゃ、<em>本当にまずいかも……</em></div>
-      </div>
-      <div class="s-panel bright">
-        <div class="face face-mentor eyes-calm"></div>
-        <div class="bbl bbl-pink">少し、<em>話してもいいですか？</em>✨</div>
-      </div>
-    </div>
-
-    <!-- Strip 2 -->
-    <div class="manga-strip r">
-      <div class="s-panel bright">
-        <div class="face face-mentor eyes-calm"></div>
-        <div class="bbl bbl-gold">もし今、結果が出ずに苦しいなら、<em>見直すべきは努力量ではなく</em>、<strong>武器かもしれません。</strong></div>
-      </div>
-      <div class="s-panel night" style="background:linear-gradient(135deg,#0E0C20,#181030);">
-        <div class="face face-guy eyes-wow"><span class="sweat">💦</span></div>
-        <div class="bbl bbl-dark"><em>武器……ですか？</em></div>
-      </div>
-      <div class="s-panel bright">
-        <div class="face face-mentor eyes-calm"></div>
-        <div class="bbl bbl-pink">はい。今の時代は、<em>やり方そのものが</em><strong>大きく変わっています。</strong>⭐</div>
-      </div>
-    </div>
-
-    <!-- Strip 3 -->
-    <div class="manga-strip r">
-      <div class="s-panel ai-room">
-        <div class="ai-scene">
-          <div class="ai-monitor">🤖</div>
-          <div class="ai-tags">
-            <span class="ai-tag">AI Chat</span>
-            <span class="ai-tag">2025</span>
-            <span class="ai-tag">TOOL</span>
-          </div>
-        </div>
-        <div class="bbl bbl-white">僕が2025年からAIに注力しているのは、<em>一時的な流行ではない</em>と確信しているからです。</div>
-      </div>
-      <div class="s-panel ai-room" style="background:linear-gradient(135deg,#040C1C,#070F1E);">
-        <div class="ai-scene">
-          <div class="ai-tags" style="gap:4px;">
-            <span class="ai-tag">STUDY</span>
-            <span class="ai-tag">TEST</span>
-            <span class="ai-tag">BUILD</span>
-          </div>
-          <div style="font-size:10px;color:rgba(0,200,255,0.6);text-align:center;letter-spacing:1px;">毎日AI × 改善 × 独自ツール</div>
-        </div>
-        <div class="bbl bbl-white">今も毎日AIに触れ、学び、試し続け、<em>独自ツールまで</em>作っています。</div>
-      </div>
-      <div class="s-panel night" style="background:linear-gradient(135deg,#0A0820,#14103A);">
-        <div class="face face-guy eyes-wow"></div>
-        <div class="bbl bbl-dark">そこまで本気で<em>取り組んでいるんですね…</em></div>
-      </div>
-    </div>
-
-    <!-- Strip 4 -->
-    <div class="manga-strip r">
-      <div class="s-panel night">
-        <div class="face face-guy eyes-tired"></div>
-        <div class="bbl bbl-white">今のままで終わりたくない…<br><strong>何を学べばいいんでしょうか？</strong></div>
-      </div>
-      <div class="s-panel bright">
-        <div class="face face-mentor eyes-calm"></div>
-        <div class="bbl bbl-gold"><strong>白澤さんの無料セミナー</strong>では、最新AI情報と<em>これから何をすべきか</em>のヒントを無料で学べます🎁</div>
-      </div>
-      <div class="s-panel ai-room" style="background:linear-gradient(135deg,#040C14,#071018);">
-        <div class="ai-scene">
-          <div class="line-btn-mini">勝ち組</div>
-          <div style="font-size:10px;color:rgba(255,255,255,0.4);text-align:center;">👇 このLINEに送るだけ</div>
-        </div>
-        <div class="bbl bbl-pink">興味がある方は<em>「勝ち組」</em>とこのLINEに送ってください！<br>詳細をすぐにお送りします✉️</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- wave -->
-<div class="wave">
-  <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:40px;background:#0D0A28;">
-    <path d="M0,25 C300,0 600,50 900,20 C1100,5 1300,40 1440,25 L1440,50 L0,50Z" fill="#080020"/>
-  </svg>
-</div>
-
-<!-- ===== HOOK ===== -->
-<section class="hook-bg">
-  <div class="section-inner">
-    <div class="hook-center">
-      <div class="section-star-label r"><span class="star-label-text">✦ TURNING POINT ✦</span></div>
-      <h2 class="section-heading r">時代は<span class="gold-word">変わった</span></h2>
-      <p class="section-sub r">あなたはどちら側にいる？</p>
-      <div class="hook-vs r">
-        <div class="vs-item bad">努力量で勝つ時代</div>
-        <div class="vs-arrow">→</div>
-        <div class="vs-item good">⭐ 仕組みで静かに勝つ時代</div>
-      </div>
-      <div class="hook-big r">
-        AIを<span class="pink">「使う側」</span>ではなく、<br>
-        <span class="gold">「収益を生み出す側」</span>へ。<br>
-        あなたの夢は、<span class="gold">必ず叶う。</span>💫
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- wave -->
-<div class="wave">
-  <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:40px;background:#080020;">
-    <path d="M0,10 C180,40 360,0 540,20 C720,40 900,5 1080,25 C1260,45 1380,15 1440,10 L1440,50 L0,50Z" fill="#0D0A28"/>
-  </svg>
-</div>
-
-<!-- ===== BENEFIT ===== -->
-<section class="benefit-bg">
-  <div class="section-inner">
-    <div class="section-star-label r"><span class="star-label-text">✦ WHAT YOU'LL GET ✦</span></div>
-    <h2 class="section-heading r">セミナーで<span class="gold-word">学べること</span></h2>
-    <p class="section-sub r">無料なのに、この豪華内容</p>
-    <div class="benefit-list">
-      <div class="b-item r">
-        <div class="b-num">1</div>
-        <div class="b-text"><span class="b-tag">💡 最新情報</span><br>2025年、AIで何が起きているのか。<strong>最前線の情報</strong>をわかりやすく解説</div>
-      </div>
-      <div class="b-item r r2">
-        <div class="b-num">2</div>
-        <div class="b-text"><span class="b-tag" style="background:rgba(245,200,66,0.15);border-color:rgba(245,200,66,0.3);color:var(--gold2);">🧠 思考法</span><br>ただ情報を知るだけでなく、<strong>今の時代に必要な考え方・方向性</strong>まで見えてくる</div>
-      </div>
-      <div class="b-item r r3">
-        <div class="b-num">3</div>
-        <div class="b-text"><span class="b-tag" style="background:rgba(64,255,176,0.1);border-color:rgba(64,255,176,0.3);color:#80FFD4;">⚡ ルール</span><br>年商3億以下の事業者が<strong>勝ち残るために必要なたった一つのルール</strong></div>
-      </div>
-      <div class="b-item r r4">
-        <div class="b-num">4</div>
-        <div class="b-text"><span class="b-tag" style="background:rgba(160,160,255,0.1);border-color:rgba(160,160,255,0.3);color:#B0B0FF;">🚀 実績</span><br>単月<strong>億超え</strong>を達成した白澤さんのAI戦略を特別公開</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ===== AMAKOMI KOU PROFILE ===== -->
-<section class="amakomi-section">
-  <div class="section-inner" style="padding-bottom:0;">
-    <div class="section-star-label r"><span class="star-label-text">✦ ABOUT あまかみこう ✦</span></div>
-    <h2 class="section-heading r">この情報を届けているのは<br><span class="gold-word">あまかみこう</span>です</h2>
-    <p class="section-sub r">宇宙と言葉と本で、世界を変えにいく人</p>
-
-    <div class="amakomi-layout r">
-
-      <!-- キャラクター列 -->
-      <div class="amakomi-char-col">
-        <div class="char-aura char-aura-2"></div>
-        <div class="char-aura char-aura-1"></div>
-        <img class="amakomi-char-img"
-             src="banner.jpg"
-             alt="あまかみこう キャラクター">
-      </div>
-
-      <!-- 情報列 -->
-      <div class="amakomi-info">
-
-        <!-- 名前 -->
-        <div class="amakomi-name-block">
-          <div class="amakomi-penname">✦ PEN NAME / ペンネーム ✦</div>
-          <div class="amakomi-name">
-            あまかみ こう
-            <span class="name-ruby">（妙高）</span>
-          </div>
-          <div class="amakomi-publisher">BlueHandsEagle13出版 代表</div>
-        </div>
-
-        <!-- 基本スペック -->
-        <div>
-          <div class="info-section-label">📍 PROFILE</div>
-          <div class="amakomi-stats">
-            <div class="stat-pill pink-pill">📍 北海道・札幌市</div>
-            <div class="stat-pill gold-pill">📚 <span class="num">約100冊</span> 出版</div>
-            <div class="stat-pill">🏢 事務職 <span class="num">25年</span> の経験</div>
-            <div class="stat-pill pink-pill">✍️ Kindle著者・プロデューサー</div>
-          </div>
-        </div>
-
-        <!-- 活動内容 -->
-        <div>
-          <div class="info-section-label">⚡ ACTIVITIES</div>
-          <div class="activity-grid">
-            <span class="act-tag pub">📖 出版プロデュース</span>
-            <span class="act-tag yt">▶ YouTubeチャンネル<br>あまこうちゃんねる</span>
-            <span class="act-tag ful">⚛ フラーレングッズ制作・販売</span>
-            <span class="act-tag com">🌐 G-Next Club 主宰</span>
-            <span class="act-tag sem">🎤 セミナー登壇</span>
-          </div>
-        </div>
-
-        <!-- 制作中の作品 -->
-        <div>
-          <div class="info-section-label">🚀 NOW CREATING</div>
-          <div class="wip-list">
-            <div class="wip-item"><div class="wip-dot"></div>『ぼくの名前は飛雄馬。未来を変える小さな手。』</div>
-            <div class="wip-item"><div class="wip-dot"></div>香道×サラリーマン向けKindle本（東野圭吾スタイル）</div>
-            <div class="wip-item"><div class="wip-dot"></div>ツインソウルシリーズ「銀河の羅針盤」</div>
-            <div class="wip-item"><div class="wip-dot"></div>絵本『いのちの糸をつむぐよ』（蚕と命のお話）</div>
-          </div>
-        </div>
-
-        <!-- 世界観タグ -->
-        <div>
-          <div class="info-section-label">🌌 WORLD KEYWORDS</div>
-          <div class="world-tags">
-            <span class="world-tag">#宇宙</span>
-            <span class="world-tag">#スピリチュアル</span>
-            <span class="world-tag">#都市伝説</span>
-            <span class="world-tag">#引き寄せ</span>
-            <span class="world-tag">#ツインソウル</span>
-            <span class="world-tag">#量子力学</span>
-            <span class="world-tag">#AI×出版</span>
-            <span class="world-tag">#フラーレン</span>
-            <span class="world-tag">#超常現象</span>
-            <span class="world-tag">#Trance&EDM</span>
-            <span class="world-tag">#言葉の力</span>
-            <span class="world-tag">#絵本</span>
-          </div>
-        </div>
-
-      </div><!-- /amakomi-info -->
-    </div><!-- /amakomi-layout -->
-
-    <!-- MISSION -->
-    <div class="mission-block r" style="max-width:760px;margin:30px auto 0;">
-      <div class="mission-label">✦ MISSION &amp; VISION ✦</div>
-      <div class="mission-text">
-        わたしが本をつくり続けるのは、<span class="em">「あなたの一日を、1分でも明るくしたい」</span>から。<br>
-        宇宙の広さと言葉の深さを武器に、<span class="em">100年後も残る作品</span>を世界へ届ける。<br>
-        AIと人間の創造力が融合する今この時代に、<br>
-        <span class="em">「あなたの物語を、本という宇宙船に乗せて宇宙へ飛ばす」</span>——<br>
-        それがBlueHandsEagle13出版のミッションです。
-      </div>
-    </div>
-
-  </div><!-- /section-inner -->
-
-  <!-- CORE PHRASE -->
-  <div class="core-phrase-wrapper r">
-    <div class="core-phrase-label">✦ CORE MESSAGE ✦</div>
-    <div class="core-phrase">
-      <span class="cp-line">ソレデモ<span class="slash"> ／ </span></span>
-      <span class="cp-line gold-line">ここまで　来た</span>
-      <span class="cp-line pink-line">この一日は</span>
-      <span class="cp-line">消えていない<span class="slash"> —</span></span>
-    </div>
-    <div class="core-phrase-sub">
-      どんな夜も、あなたが生きたこの一日は永遠に輝き続ける。<br>
-      あなたの物語は、まだ書き終わっていない。
-    </div>
-  </div>
-
-  <!-- QR / LINE オープンチャット -->
-  <div class="qr-section r">
-    <div class="qr-label">💬 LINE オープンチャット</div>
-    <div class="qr-title">G-Next Club<br>あまかみこうと宇宙の話をしよう</div>
-    <img class="qr-img"
-         src="char.png"
-         alt="LINE オープンチャット QRコード">
-    <div class="qr-hint">
-      QRコードを読み取るか、<br>下のリンクから直接参加できます🌟<br><a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" style="color:var(--pink-light);font-weight:800;font-size:12px;word-break:break-all;">👉 G-Next Club オープンチャット</a>
-    </div>
-  </div>
-
-  <div style="height:60px;"></div>
-</section>
-
-<!-- ===== PROFILE ===== -->
-<section class="profile-bg">
-  <div class="section-inner">
-    <div class="section-star-label r"><span class="star-label-text">✦ SPEAKER ✦</span></div>
-    <h2 class="section-heading r">登壇者<span class="gold-word">プロフィール</span></h2>
-    <p class="section-sub r">本物の実績が語る、だから信頼できる</p>
-    <div class="profile-card r">
-
-      <!-- バナー画像 -->
-      <div style="width:100%;border-radius:14px;overflow:hidden;margin-bottom:20px;position:relative;z-index:1;box-shadow:0 8px 30px rgba(0,0,0,0.5);">
-        <img src="qr.jpg" alt="白澤慶幸さん 億サロンの教科書" style="width:100%;height:auto;display:block;border-radius:14px;">
-      </div>
-
-      <div class="profile-name" style="font-size:26px;">白澤 慶幸 さん</div>
-      <div class="profile-role">AI戦略家 / 実業家 / 億サロン主宰</div>
-      <div class="profile-tags">
-        <span class="p-tag">AI2.0プロモーター</span>
-        <span class="p-tag">Kindle著者</span>
-        <span class="p-tag">億サロン主宰</span>
-        <span class="p-tag">単月億超え</span>
-      </div>
-      <div class="profile-result">
-        <div class="result-big" style="font-size:24px;">10倍売上 × 10倍時短 <span style="-webkit-text-fill-color:white;color:white;font-size:28px;">=100x</span></div>
-        <div class="result-label">✨ 100倍の効果を生み出すAI2.0プロモーター</div>
-      </div>
-
-      <!-- あまかみこう personal note -->
-      <div class="r" style="
-        background:rgba(255,107,157,0.08);
-        border:1px solid rgba(255,107,157,0.25);
-        border-left:3px solid var(--pink);
-        border-radius:0 16px 16px 0;
-        padding:20px 22px;
-        margin-top:16px;
-        position:relative;
-        z-index:1;
-      ">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
-          <span style="font-size:20px;">💕</span>
-          <span style="font-size:11px;font-weight:800;color:var(--pink-light);letter-spacing:3px;">あまかみこうより</span>
-        </div>
-        <p style="font-size:14px;line-height:2.1;color:rgba(255,255,255,0.85);">
-          2025年、わたしはKindle本の出版や漫画づくりを通して、<br>
-          白澤さんが主宰する <strong style="color:var(--gold2);">「億サロ」</strong> というコミュニティに参加させていただきました。<br><br>
-          学んだこと、出会った仲間、広がった景色——<br>
-          <span style="color:var(--pink-light);font-weight:800;">本当に、世界が変わったと感じた一年でした。</span>💫<br><br>
-          そして2026年、新たな募集が始まります。<br>
-          もしあなたが今、<strong style="color:#fff;">「変わりたい」「次のステージへ行きたい」</strong>と感じているなら——<br>
-          これは、あなたへのメッセージかもしれません。🌟
-        </p>
-        <div style="margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,107,157,0.2);
-          font-size:12px;color:rgba(255,255,255,0.35);font-style:italic;letter-spacing:1px;text-align:right;">
-          ソレデモ／ここまで来た／この一日は／消えていない — あまかみ こう
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== CTA ===== -->
-<section class="cta-bg" id="cta">
-  <div class="cta-aurora"></div>
-  <div class="section-inner" style="text-align:center;">
-    <div class="section-star-label r"><span class="star-label-text">✦ YOUR MOMENT ✦</span></div>
-    <div class="cta-free r">🎁 完全無料</div>
-    <h2 class="cta-title r">
-      <span class="gold">夢を叶える</span>ために、<br>
-      今すぐ<span class="pink">最初の一歩</span>を踏み出そう💫
-    </h2>
-    <p class="cta-sub r">残り枠あり。今動いた人だけが変わる。</p>
-
-    <div class="countdown r" id="countdown">
-      <div class="cd-unit"><div class="cd-num" id="cdD">--</div><div class="cd-lbl">日</div></div>
-      <div class="cd-unit"><div class="cd-num" id="cdH">--</div><div class="cd-lbl">時間</div></div>
-      <div class="cd-unit"><div class="cd-num" id="cdM">--</div><div class="cd-lbl">分</div></div>
-      <div class="cd-unit"><div class="cd-num" id="cdS">--</div><div class="cd-lbl">秒</div></div>
-    </div>
-
-    <ul class="checklist r">
-      <li class="check-row"><span class="check-circle">✓</span>参加費・受講料：<strong>完全無料</strong></li>
-      <li class="check-row"><span class="check-circle">✓</span>スマホ1台で参加OK</li>
-      <li class="check-row"><span class="check-circle">✓</span>AI未経験・初心者でも大丈夫 🌟</li>
-      <li class="check-row"><span class="check-circle">✓</span>「勝ち組」とLINEに送るだけ！</li>
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">こんな方へ</p>
+    <h2>ひとつでも当てはまったら</h2>
+    <ul class="checks">
+      <li>自分の人生を、家族や大切な人に残したい</li>
+      <li>「いつか本を出したい」と思い続けている</li>
+      <li>書きはじめても、ひとりだと続かない</li>
+      <li>Kindle出版に興味はあるけれど、やり方が分からない</li>
+      <li>同じ想いの仲間と、楽しく書き進めたい</li>
     </ul>
-
-    <a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" class="cta-btn r" style="text-decoration:none;display:inline-block;">
-      💌 今すぐ LINE オープンチャットへ参加する
-    </a>
-
-    <a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" class="cta-line r" style="text-decoration:none;cursor:pointer;display:flex;max-width:400px;margin:24px auto 0;background:rgba(0,185,0,0.1);border:1px solid rgba(0,185,0,0.35);border-radius:16px;padding:16px 20px;align-items:center;gap:12px;justify-content:center;position:relative;z-index:1;transition:background 0.2s;">
-      <div class="line-ico">💬</div>
-      <div class="cta-line-txt">タップしてLINEオープンチャット<br><strong>「G-Next Club」</strong>へ直接参加🌟<br><span style="font-size:11px;color:rgba(255,255,255,0.45);">無料・いつでも退会OK</span></div>
-    </a>
-    <p class="cta-note r">※ 無理な勧誘は一切ありません。いつでも退会できます。</p>
   </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
-<footer>
-  <div class="footer-logo">💫 あまかみこう × AI戦略シェア会</div>
-  <div class="footer-txt">
-    BlueHandsEagle13出版<br>
-    © 2025 All Rights Reserved.<br><a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" style="color:var(--pink-light);font-size:12px;font-weight:700;">💬 LINEオープンチャット G-Next Club</a>
+<section>
+  <div class="wrap">
+    <p class="eyebrow">講座の流れ</p>
+    <h2>全8回で、棚卸しから出版まで</h2>
+    <p class="muted">月2回、オンライン（Google Meet）で50分。毎回、短いレッスンと、書いたものを見せ合う時間があります。</p>
+    <div class="steps">
+      <div class="st"><div class="n">1</div><div><h3>オリエン＆棚卸し</h3><p>仲間と出会い、人生年表づくりをはじめる</p></div></div>
+      <div class="st"><div class="n">2</div><div><h3>テーマ発見</h3><p>いちばん伝えたい1本の軸と、仮タイトルを決める</p></div></div>
+      <div class="st"><div class="n">3</div><div><h3>書きはじめる</h3><p>書き方のコツを学び、毎日30分の習慣をスタート</p></div></div>
+      <div class="st"><div class="n">4</div><div><h3>光と影を書く</h3><p>辛かった記憶にもそっと触れ、止まった所はみんなで解決する</p></div></div>
+      <div class="st"><div class="n">5</div><div><h3>整える</h3><p>章立てと推敲で、読みやすい形に</p></div></div>
+      <div class="st"><div class="n">6</div><div><h3>出版準備</h3><p>Kindle出版のしくみと、表紙のつくり方</p></div></div>
+      <div class="st"><div class="n">7</div><div><h3>入稿サポート</h3><p>みんなで一緒に、実際にKindleへ入稿</p></div></div>
+      <div class="st"><div class="n">8</div><div><h3>お披露目会</h3><p>全員の出版をお祝いし、本を届ける方法を学ぶ</p></div></div>
+    </div>
   </div>
-  <div class="footer-phrase">ソレデモ／ここまで来た／この一日は／消えていない</div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">先輩がいます</p>
+    <div class="senpai">
+      <h2 style="font-size:22px; margin-bottom:8px">0期生・よしえさんも、先輩として参加します</h2>
+      <p style="margin:0">妙高のもとで自分の人生を一冊にまとめ、出版を果たしたよしえさん。書きはじめの迷いも、出版までの道のりも知っている先輩が、ときどき体験を語りに来てくれます。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">募集要項</p>
+    <h2>1期の概要</h2>
+    <div class="table-wrap">
+      <table>
+        <tr><th>開講</th><td>2027年1月16日（土）スタート</td></tr>
+        <tr><th>回数・期間</th><td>全8回（隔週の土曜）・約4ヶ月</td></tr>
+        <tr><th>日程</th><td>1/16・1/30・2/13・2/27・3/13・3/27・4/10・4/24（すべて土曜 10:00〜10:50）</td></tr>
+        <tr><th>形式</th><td>オンライン（Google Meet）・1回50分</td></tr>
+        <tr><th>定員</th><td>5〜8名（少人数制）</td></tr>
+        <tr><th>ゴール</th><td>あなたの自分史を、Kindleの電子書籍として出版</td></tr>
+        <tr><th>欠席したとき</th><td>録画でご覧いただけます</td></tr>
+        <tr><th>お支払い</th><td>銀行振込・一括（分割はございません）</td></tr>
+        <tr><th>申込締切</th><td>12月20日（日）。お振込みは12月25日（金）まで</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">受講料</p>
+    <div class="price">
+      <span class="tag">1期 モニター価格</span>
+      <div class="big">¥54,780<small>（税込）</small></div>
+      <p class="base">本体価格 ¥49,800 ＋ 消費税</p>
+      <p class="reg">2期以降の通常価格は ¥107,800（税込）の予定です。<br>1期は少人数のモニター価格でご案内します。</p>
+    </div>
+    <p class="muted" style="margin-top:18px; font-size:14px">本講座は電子書籍（Kindle）の出版までです。卒業後、ご家族に手渡せる紙の本（ペーパーバック）にしたい方には、もう一度ご自分の本を読み込んで書き直し、紙の本に仕上げる「第2部 紙の本コース」（全3回・¥54,780 税込）をご用意しています。ご自分で直す時間がない方には、紙の本への作り直しをお任せいただける代行（¥48,400 税込／1冊）もございます。</p>
+    <p class="muted" style="margin-top:10px; font-size:14px">人生の大切な場面を漫画にしたい方には、BlueHandsEagle13 が漫画をお描きします（2ページ ¥11,000 税込）。</p>
+    <p class="muted" style="margin-top:10px; font-size:14px">マンツーマンでじっくり伴走してほしい方には、このグループ講座をまるごと含む「プレミアム個別コース」（¥330,000 税込）もございます。くわしくは説明会でご相談ください。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">よくあるご質問</p>
+    <dl class="faq">
+      <dt>文章を書いたことがなくても大丈夫ですか？</dt>
+      <dd>大丈夫です。年表づくりから一歩ずつ進めます。上手に書くより、まず書き出すことを大切にしています。</dd>
+      <dt>パソコンが苦手です。</dt>
+      <dd>Kindleへの入稿は、第7回にみんなで一緒に行います。その場でつまずきを解決します。</dd>
+      <dt>もっと個別に見てほしいときは？</dt>
+      <dd>マンツーマンの相談や個別補修を、別料金のオプションでご用意しています。</dd>
+      <dt>講座が終わったあとは？</dt>
+      <dd>卒業生のための月額コミュニティ「輪」があります。2冊目を書く仲間とつながり続けられます。</dd>
+      <dt>辛い思い出も書かないといけませんか？</dt>
+      <dd>いいえ。書くのも、みんなに話すのも自由です。書ける部分だけで大丈夫です。</dd>
+      <dt>回と回のあいだは、ひとりで書くのですか？</dt>
+      <dd>受講生だけのLINEオープンチャット（ニックネームで参加できます）で、毎日の進み具合をひと言報告し合います。書けない日は10分だけでも大丈夫です。</dd>
+      <dt>教科書はありますか？</dt>
+      <dd>主宰の著書『ありがとう、私の人生 家族に遺す「自分史」という遺書』（あまかみ こう著）を教科書にします。</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="apply">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#E7C98A">お申込み</p>
+    <h2>まずは、無料説明会へ</h2>
+    <p>講座の中身や雰囲気を、50分の無料オンライン説明会でお話しします。ご質問もお気軽にどうぞ。</p>
+    <p><b style="color:#F0D9A6">12月5日（土）10:00〜10:50</b>　／　<b style="color:#F0D9A6">12月10日（木）20:00〜20:50</b>　／　<b style="color:#F0D9A6">12月17日（木）20:00〜20:50</b></p>
+    <p style="font-size:14px">説明会は何度でもご参加いただけます。どの回もご都合がつかない方には、説明会の録画をお送りします（12月20日までご覧いただけます）。</p>
+    <div class="flow"><span>① 無料説明会</span><span>② お申込み</span><span>③ お振込み</span><span>④ 開講</span></div>
+    <div class="contact">説明会のご予約・お申込みは<br><a href="https://forms.gle/5kcE3Bubw93mpwW46" style="color:inherit; text-decoration:underline">こちらのフォームから</a><br><span style="font-size:13px; font-weight:500; color:#DCE5EF">いただいた情報は、講座のご案内とご連絡にだけ使います。</span></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">あまかみ 自分史の輪　｜　表示価格は税込です</div>
 </footer>
-
-</div><!-- /page-wrap -->
-
-<script>
-// ===== COSMOS CANVAS =====
-(function() {
-  const cv = document.getElementById('cosmosCanvas');
-  const ctx = cv.getContext('2d');
-  let W, H, stars = [], nebulaParts = [];
-
-  function resize() {
-    W = cv.width = window.innerWidth;
-    H = cv.height = window.innerHeight;
-  }
-  window.addEventListener('resize', resize);
-  resize();
-
-  // Create stars with varying properties
-  function initStars() {
-    stars = [];
-    const count = Math.min(400, Math.floor(W * H / 5000));
-    for (let i = 0; i < count; i++) {
-      stars.push({
-        x: Math.random() * W,
-        y: Math.random() * H,
-        r: Math.random() * 1.8 + 0.2,
-        baseAlpha: Math.random() * 0.5 + 0.1,
-        alpha: 0,
-        twinkleSpeed: Math.random() * 0.015 + 0.003,
-        twinkleOffset: Math.random() * Math.PI * 2,
-        // color variety: white, blue-white, gold, pink
-        hue: [0, 200, 220, 45, 300][Math.floor(Math.random() * 5)],
-        sat: Math.random() < 0.3 ? Math.floor(Math.random() * 40 + 30) : 0,
-      });
-    }
-  }
-  initStars();
-  window.addEventListener('resize', initStars);
-
-  let frame = 0;
-
-  // Bright star clusters (Milky Way effect)
-  function drawMilkyWay() {
-    const gradient = ctx.createLinearGradient(W * 0.1, 0, W * 0.9, H);
-    gradient.addColorStop(0, 'rgba(80,60,120,0)');
-    gradient.addColorStop(0.3, 'rgba(80,60,120,0.03)');
-    gradient.addColorStop(0.5, 'rgba(100,80,150,0.05)');
-    gradient.addColorStop(0.7, 'rgba(80,60,120,0.03)');
-    gradient.addColorStop(1, 'rgba(80,60,120,0)');
-
-    ctx.save();
-    ctx.translate(W/2, H/2);
-    ctx.rotate(-0.4);
-    ctx.translate(-W/2, -H/2);
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, W, H);
-    ctx.restore();
-  }
-
-  function draw() {
-    ctx.clearRect(0, 0, W, H);
-    drawMilkyWay();
-
-    frame++;
-    stars.forEach(s => {
-      s.alpha = s.baseAlpha + Math.sin(frame * s.twinkleSpeed + s.twinkleOffset) * s.baseAlpha * 0.6;
-      s.alpha = Math.max(0, Math.min(1, s.alpha));
-
-      ctx.beginPath();
-      if (s.sat > 0) {
-        ctx.fillStyle = `hsla(${s.hue},${s.sat}%,90%,${s.alpha})`;
-      } else {
-        ctx.fillStyle = `rgba(255,255,255,${s.alpha})`;
-      }
-
-      // Larger stars get a subtle glow
-      if (s.r > 1.2) {
-        const grd = ctx.createRadialGradient(s.x, s.y, 0, s.x, s.y, s.r * 4);
-        grd.addColorStop(0, s.sat > 0 ? `hsla(${s.hue},${s.sat}%,90%,${s.alpha * 0.5})` : `rgba(255,255,255,${s.alpha * 0.4})`);
-        grd.addColorStop(1, 'rgba(0,0,0,0)');
-        ctx.fillStyle = grd;
-        ctx.arc(s.x, s.y, s.r * 4, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.beginPath();
-        ctx.fillStyle = `rgba(255,255,255,${s.alpha})`;
-      }
-
-      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-      ctx.fill();
-
-      // Cross sparkle for biggest stars
-      if (s.r > 1.5 && s.alpha > 0.5) {
-        ctx.strokeStyle = `rgba(255,255,255,${s.alpha * 0.3})`;
-        ctx.lineWidth = 0.5;
-        ctx.beginPath();
-        ctx.moveTo(s.x - s.r * 5, s.y);
-        ctx.lineTo(s.x + s.r * 5, s.y);
-        ctx.moveTo(s.x, s.y - s.r * 5);
-        ctx.lineTo(s.x, s.y + s.r * 5);
-        ctx.stroke();
-      }
-    });
-
-    requestAnimationFrame(draw);
-  }
-  draw();
-})();
-
-// ===== SCROLL REVEAL =====
-const reveals = document.querySelectorAll('.r');
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
-  });
-}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-reveals.forEach(r => io.observe(r));
-
-// ===== COUNTDOWN =====
-function updateCd() {
-  const target = new Date();
-  target.setDate(target.getDate() + 3);
-  target.setHours(20, 0, 0, 0);
-  const diff = target - new Date();
-  if (diff > 0) {
-    const d = Math.floor(diff / 86400000);
-    const h = Math.floor((diff % 86400000) / 3600000);
-    const m = Math.floor((diff % 3600000) / 60000);
-    const s = Math.floor((diff % 60000) / 1000);
-    document.getElementById('cdD').textContent = String(d).padStart(2,'0');
-    document.getElementById('cdH').textContent = String(h).padStart(2,'0');
-    document.getElementById('cdM').textContent = String(m).padStart(2,'0');
-    document.getElementById('cdS').textContent = String(s).padStart(2,'0');
-  }
-}
-updateCd();
-setInterval(updateCd, 1000);
-
-// smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    e.preventDefault();
-    const t = document.querySelector(a.getAttribute('href'));
-    if (t) t.scrollIntoView({ behavior:'smooth' });
-  });
-});
-</script>
-
 </body>
 </html>
