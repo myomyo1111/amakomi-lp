@@ -1234,6 +1234,19 @@ footer {
 }
 .final-cta-note { margin-top:14px; font-size:12px; color:rgba(255,255,255,0.4); }
 
+/* amakomi SNS / links */
+.amakomi-links { display:flex; flex-wrap:wrap; gap:8px; }
+.link-pill {
+  display:inline-flex; align-items:center; gap:5px;
+  background:rgba(255,255,255,0.05); border:1px solid rgba(255,107,157,0.25);
+  border-radius:20px; padding:6px 13px; text-decoration:none;
+  font-size:12px; font-weight:800; color:var(--pink-light);
+  transition:transform 0.15s, background 0.15s;
+}
+.link-pill:hover { transform:translateY(-2px); background:rgba(255,107,157,0.14); }
+.link-pill.music { color:#80FFD4; border-color:rgba(80,255,212,0.3); }
+.link-pill.music:hover { background:rgba(80,255,212,0.12); }
+
 </style>
 </head>
 <body>
@@ -1334,10 +1347,17 @@ footer {
           <div class="info-section-label">📍 PROFILE</div>
           <div class="amakomi-stats">
             <div class="stat-pill pink-pill">📍 北海道・札幌市</div>
-            <div class="stat-pill gold-pill">📚 <span class="num">約100冊</span> 出版</div>
-            <div class="stat-pill">🏢 事務職 <span class="num">25年</span> の経験</div>
-            <div class="stat-pill pink-pill">✍️ Kindle著者・プロデューサー</div>
+            <div class="stat-pill gold-pill">📚 <span class="num">116冊〜</span> 出版中</div>
+            <div class="stat-pill pink-pill">✍️ Kindle作家・出版プロデューサー</div>
+            <div class="stat-pill">🎨 AI漫画家</div>
           </div>
+        </div>
+
+        <!-- プロフィール文 -->
+        <div style="font-size:13.5px;line-height:2;color:rgba(255,255,255,0.78);">
+          本・漫画・音楽・言葉を通して、<strong style="color:var(--gold2);">「生きた証を次世代へ残す」</strong>。<br>
+          北海道から、日本へ。日本から、世界へ。<br>
+          Amazon・note・YouTube・Xなどで発信中📡
         </div>
 
         <!-- 活動内容 -->
@@ -1345,10 +1365,10 @@ footer {
           <div class="info-section-label">⚡ ACTIVITIES</div>
           <div class="activity-grid">
             <span class="act-tag pub">📖 出版プロデュース</span>
-            <span class="act-tag yt">▶ YouTubeチャンネル<br>あまこうちゃんねる</span>
-            <span class="act-tag ful">⚛ フラーレングッズ制作・販売</span>
-            <span class="act-tag com">🌐 G-Next Club 主宰</span>
-            <span class="act-tag sem">🎤 セミナー登壇</span>
+            <span class="act-tag com">🎨 AI漫画・漫画動画</span>
+            <span class="act-tag yt">▶ YouTube あまこうちゃんねる</span>
+            <span class="act-tag ful">🎵 音楽制作（Spotify配信）</span>
+            <span class="act-tag sem">🏢 BlueHandsEagle13出版社 運営</span>
           </div>
         </div>
 
@@ -1356,29 +1376,49 @@ footer {
         <div>
           <div class="info-section-label">🚀 NOW CREATING</div>
           <div class="wip-list">
-            <div class="wip-item"><div class="wip-dot"></div>『ぼくの名前は飛雄馬。未来を変える小さな手。』</div>
-            <div class="wip-item"><div class="wip-dot"></div>香道×サラリーマン向けKindle本（東野圭吾スタイル）</div>
-            <div class="wip-item"><div class="wip-dot"></div>ツインソウルシリーズ「銀河の羅針盤」</div>
+            <div class="wip-item"><div class="wip-dot"></div><strong style="color:#fff;">嵐神の印シリーズ</strong>（最新作）</div>
             <div class="wip-item"><div class="wip-dot"></div>絵本『いのちの糸をつむぐよ』（蚕と命のお話）</div>
+            <div class="wip-item"><div class="wip-dot"></div>ツインソウルシリーズ「銀河の羅針盤」</div>
+            <div class="wip-item"><div class="wip-dot"></div>『ぼくの名前は飛雄馬。未来を変える小さな手。』</div>
           </div>
         </div>
 
-        <!-- 世界観タグ -->
+        <!-- SNS・リンク -->
         <div>
-          <div class="info-section-label">🌌 WORLD KEYWORDS</div>
+          <div class="info-section-label">🔗 LINKS</div>
+          <div class="amakomi-links">
+            <a class="link-pill" href="https://iwmqpi68.autosns.app/line" target="_blank" rel="noopener">💬 公式LINE</a>
+            <a class="link-pill" href="https://twitter.com/myoco9883" target="_blank" rel="noopener">𝕏 X</a>
+            <a class="link-pill" href="https://note.com/globalkouamakami" target="_blank" rel="noopener">📝 note</a>
+            <a class="link-pill" href="https://www.youtube.com/@myomyoco7457/shorts" target="_blank" rel="noopener">▶ YouTube</a>
+            <a class="link-pill" href="https://amzn.to/4fUsSUa" target="_blank" rel="noopener">📚 Amazon</a>
+            <a class="link-pill" href="https://ornate-cocada-78c053.netlify.app/" target="_blank" rel="noopener">🎨 絵本プロジェクト</a>
+            <a class="link-pill" href="https://bluehandseagle13.netlify.app/" target="_blank" rel="noopener">🏢 出版社サイト</a>
+          </div>
+          <div class="amakomi-links" style="margin-top:8px;">
+            <a class="link-pill music" href="https://open.spotify.com/intl-ja/track/1DrufAgt92aHjRWGmeZUKL?si=bd417aa3f5944f1a" target="_blank" rel="noopener">🎵 GOLDEN WAVE</a>
+            <a class="link-pill music" href="https://open.spotify.com/intl-ja/album/2duYN0G563gztYGPZly4b7?si=_amKJ3u9RjSllALIp0g7Gw" target="_blank" rel="noopener">🎵 ムゲントピア</a>
+          </div>
+        </div>
+
+        <!-- ハッシュタグ -->
+        <div>
+          <div class="info-section-label">🏷 HASHTAGS</div>
           <div class="world-tags">
-            <span class="world-tag">#宇宙</span>
-            <span class="world-tag">#スピリチュアル</span>
-            <span class="world-tag">#都市伝説</span>
-            <span class="world-tag">#引き寄せ</span>
-            <span class="world-tag">#ツインソウル</span>
-            <span class="world-tag">#量子力学</span>
-            <span class="world-tag">#AI×出版</span>
-            <span class="world-tag">#フラーレン</span>
-            <span class="world-tag">#超常現象</span>
-            <span class="world-tag">#Trance&EDM</span>
+            <span class="world-tag">#あまかみこう</span>
+            <span class="world-tag">#Kindle作家</span>
+            <span class="world-tag">#Kindle出版</span>
+            <span class="world-tag">#AI漫画</span>
+            <span class="world-tag">#漫画動画</span>
+            <span class="world-tag">#感動漫画</span>
+            <span class="world-tag">#生きた証を次世代へ</span>
+            <span class="world-tag">#BlueHandsEagle13</span>
+            <span class="world-tag">#北海道</span>
+            <span class="world-tag">#札幌</span>
+            <span class="world-tag">#挑戦</span>
             <span class="world-tag">#言葉の力</span>
-            <span class="world-tag">#絵本</span>
+            <span class="world-tag">#愛</span>
+            <span class="world-tag">#絆</span>
           </div>
         </div>
 
@@ -1389,10 +1429,10 @@ footer {
     <div class="mission-block r" style="max-width:760px;margin:30px auto 0;">
       <div class="mission-label">✦ MISSION &amp; VISION ✦</div>
       <div class="mission-text">
-        わたしが本をつくり続けるのは、<span class="em">「あなたの一日を、1分でも明るくしたい」</span>から。<br>
-        宇宙の広さと言葉の深さを武器に、<span class="em">100年後も残る作品</span>を世界へ届ける。<br>
+        わたしが本・漫画・音楽・言葉をつくり続けるのは、<span class="em">「生きた証を次世代へ残す」</span>ため。<br>
+        北海道から、日本へ。日本から、世界へ。<br>
         AIと人間の創造力が融合する今この時代に、<br>
-        <span class="em">「あなたの物語を、本という宇宙船に乗せて宇宙へ飛ばす」</span>——<br>
+        <span class="em">「あなたの物語を、作品という船に乗せて未来へ届ける」</span>——<br>
         それがBlueHandsEagle13出版のミッションです。
       </div>
     </div>
@@ -1416,13 +1456,15 @@ footer {
 
   <!-- QR / LINE オープンチャット -->
   <div class="qr-section r">
-    <div class="qr-label">💬 LINE オープンチャット</div>
-    <div class="qr-title">G-Next Club<br>あまかみこうと宇宙の話をしよう</div>
+    <div class="qr-label">💬 お問い合わせ・ご相談</div>
+    <div class="qr-title">Instagram運用代行の<br>ご相談はLINEから🌟</div>
     <img class="qr-img"
          src="char.png"
-         alt="LINE オープンチャット QRコード">
+         alt="LINE QRコード">
     <div class="qr-hint">
-      QRコードを読み取るか、<br>下のリンクから直接参加できます🌟<br><a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" style="color:var(--pink-light);font-weight:800;font-size:12px;word-break:break-all;">👉 G-Next Club オープンチャット</a>
+      下のリンクから、お気軽にメッセージください👇<br>
+      <a href="https://iwmqpi68.autosns.app/line" target="_blank" style="color:#8BFF9A;font-weight:800;font-size:13px;word-break:break-all;">👉 あまかみこう 公式LINE</a><br>
+      <a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" style="color:var(--pink-light);font-weight:800;font-size:12px;word-break:break-all;">👉 G-Next Club オープンチャット</a>
     </div>
   </div>
 
