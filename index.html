@@ -1066,30 +1066,30 @@ footer {
 .price-feat li strong { color:#fff; }
 .price-card.featured .price-feat li .fc { color:var(--gold2); }
 
-/* per-plan LINE button */
+/* per-plan LINE button (glowing) */
 .price-cta {
-  display:flex; align-items:center; justify-content:center; gap:8px;
-  margin-top:20px; padding:13px 16px;
+  display:flex; align-items:center; justify-content:center; gap:9px;
+  margin-top:22px; padding:15px 16px;
   border-radius:14px; text-decoration:none;
-  font-size:14px; font-weight:900; letter-spacing:0.5px;
-  background:rgba(0,185,0,0.12); border:1.5px solid rgba(0,185,0,0.45);
-  color:#8BFF9A;
-  transition:transform 0.2s, background 0.2s, box-shadow 0.2s;
+  font-size:15px; font-weight:900; letter-spacing:0.5px;
+  background:linear-gradient(135deg,#06C755,#00A848); border:none;
+  color:#fff;
+  box-shadow:0 4px 20px rgba(6,199,85,0.45);
+  animation:line-glow 2.2s ease-in-out infinite;
+  transition:transform 0.2s;
 }
-.price-cta:hover {
-  transform:translateY(-2px);
-  background:rgba(0,185,0,0.2);
-  box-shadow:0 6px 20px rgba(0,185,0,0.25);
-}
+.price-cta:hover { transform:translateY(-3px) scale(1.02); }
 .price-cta .li-ico {
-  width:22px; height:22px; border-radius:6px; background:#00B900;
+  width:24px; height:24px; border-radius:7px; background:rgba(255,255,255,0.22);
   display:flex; align-items:center; justify-content:center;
-  font-size:12px; flex-shrink:0;
+  font-size:13px; flex-shrink:0;
 }
 .price-card.featured .price-cta {
-  background:linear-gradient(135deg, rgba(0,195,0,0.18), rgba(0,160,0,0.12));
-  border-color:rgba(0,200,0,0.55);
-  box-shadow:0 4px 18px rgba(0,185,0,0.2);
+  box-shadow:0 6px 26px rgba(6,199,85,0.6), 0 0 40px rgba(6,199,85,0.25);
+}
+@keyframes line-glow {
+  0%,100% { box-shadow:0 4px 20px rgba(6,199,85,0.4); }
+  50% { box-shadow:0 6px 34px rgba(6,199,85,0.78), 0 0 50px rgba(6,199,85,0.32); }
 }
 
 .insta-notes {
@@ -1132,6 +1132,90 @@ footer {
 .insta-check li::before {
   content:'✓'; position:absolute; left:0; color:var(--gold2); font-weight:900;
 }
+
+/* === INSTAGRAM section: conversion blocks (seminar-LP energy, cosmic theme) === */
+.insta-subhead {
+  text-align:center; font-size:clamp(18px,4.8vw,26px); font-weight:900;
+  color:#fff; margin:54px 0 4px;
+}
+.insta-subhead .g {
+  background:linear-gradient(135deg,var(--gold),#FFD060);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.insta-subhead-sub {
+  text-align:center; font-size:11px; color:var(--pink-light);
+  letter-spacing:3px; font-weight:700; margin-bottom:24px; opacity:0.85;
+}
+
+/* こんな方におすすめ */
+.insta-reco { max-width:620px; margin:0 auto; display:flex; flex-direction:column; gap:10px; }
+.reco-item {
+  display:flex; align-items:center; gap:14px; padding:15px 18px;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,107,157,0.18);
+  border-left:3px solid var(--pink);
+  border-radius:0 14px 14px 0;
+  transition:transform 0.2s, box-shadow 0.2s;
+}
+.reco-item:hover { transform:translateX(5px); box-shadow:0 4px 18px rgba(255,107,157,0.12); }
+.reco-ico {
+  width:36px; height:36px; border-radius:50%; flex-shrink:0;
+  background:linear-gradient(135deg,var(--pink),#FF7733);
+  display:flex; align-items:center; justify-content:center; font-size:17px;
+  box-shadow:0 0 16px rgba(255,107,157,0.5);
+}
+.reco-txt { font-size:14px; font-weight:700; color:rgba(255,255,255,0.85); line-height:1.6; }
+
+/* ご依頼の流れ */
+.flow-grid {
+  max-width:680px; margin:0 auto;
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(135px,1fr)); gap:12px;
+}
+.flow-step {
+  text-align:center; position:relative;
+  background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px; padding:20px 14px;
+}
+.flow-num {
+  width:42px; height:42px; margin:0 auto 10px; border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),#FFA040); color:#2A1800;
+  font-weight:900; font-size:18px;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 0 18px rgba(245,200,66,0.5);
+}
+.flow-ttl { font-size:13px; font-weight:800; color:#fff; margin-bottom:5px; }
+.flow-desc { font-size:11px; color:rgba(255,255,255,0.55); line-height:1.6; }
+
+/* FAQ */
+.faq-list { max-width:620px; margin:0 auto; display:flex; flex-direction:column; gap:10px; }
+.faq-item {
+  background:rgba(255,255,255,0.04); border:1px solid rgba(255,107,157,0.15);
+  border-radius:14px; padding:16px 18px;
+}
+.faq-q { display:flex; gap:10px; font-size:14px; font-weight:800; color:#fff; align-items:flex-start; }
+.faq-q .qm { color:var(--pink); font-weight:900; flex-shrink:0; }
+.faq-a {
+  display:flex; gap:10px; font-size:13px; color:rgba(255,255,255,0.65);
+  line-height:1.8; margin-top:9px; padding-top:9px; border-top:1px solid rgba(255,255,255,0.08);
+}
+.faq-a .am { color:var(--gold2); font-weight:900; flex-shrink:0; }
+
+/* 最終CTA（光るボタン） */
+.insta-final-cta { text-align:center; margin:44px auto 0; }
+.final-cta-btn {
+  display:inline-flex; align-items:center; gap:12px;
+  background:linear-gradient(135deg,#06C755,#00A848); color:#fff;
+  font-family:var(--font); font-size:clamp(16px,4.5vw,21px); font-weight:900;
+  padding:20px 46px; border-radius:50px; text-decoration:none;
+  box-shadow:0 6px 30px rgba(6,199,85,0.5);
+  animation:line-glow 2.2s ease-in-out infinite; transition:transform 0.2s;
+}
+.final-cta-btn:hover { transform:translateY(-4px) scale(1.03); }
+.final-cta-btn .fc-ico {
+  width:30px; height:30px; border-radius:9px; background:rgba(255,255,255,0.2);
+  display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0;
+}
+.final-cta-note { margin-top:14px; font-size:12px; color:rgba(255,255,255,0.4); }
 
 </style>
 </head>
@@ -1578,6 +1662,16 @@ footer {
       そんな方のために、<span class="pink">世界観づくり</span>から<span class="gold">リール制作・分析</span>まで代行します📱✨
     </p>
 
+    <!-- こんな方におすすめ -->
+    <h3 class="insta-subhead r">こんな方に<span class="g">おすすめ</span></h3>
+    <p class="insta-subhead-sub r">✦ FOR YOU ✦</p>
+    <div class="insta-reco">
+      <div class="reco-item r"><div class="reco-ico">😵‍💫</div><div class="reco-txt">投稿する時間がなくて、更新がずっと止まっている</div></div>
+      <div class="reco-item r r2"><div class="reco-ico">🤔</div><div class="reco-txt">何を投稿すればいいか、正直よく分からない</div></div>
+      <div class="reco-item r r3"><div class="reco-ico">📉</div><div class="reco-txt">自己流でやってきたけど、フォロワーが伸びない</div></div>
+      <div class="reco-item r r4"><div class="reco-ico">🎬</div><div class="reco-txt">リール（動画）を出したいけど、手が回らない</div></div>
+    </div>
+
     <div class="price-grid">
       <!-- Light -->
       <div class="price-card r">
@@ -1647,6 +1741,38 @@ footer {
       </div>
     </div>
 
+    <!-- ご依頼の流れ -->
+    <h3 class="insta-subhead r">ご依頼の<span class="g">流れ</span></h3>
+    <p class="insta-subhead-sub r">✦ HOW TO START ✦</p>
+    <div class="flow-grid">
+      <div class="flow-step r"><div class="flow-num">1</div><div class="flow-ttl">LINEで相談</div><div class="flow-desc">ボタンから友だち追加して無料相談</div></div>
+      <div class="flow-step r r2"><div class="flow-num">2</div><div class="flow-ttl">ヒアリング</div><div class="flow-desc">目的・ご予算をおうかがい</div></div>
+      <div class="flow-step r r3"><div class="flow-num">3</div><div class="flow-ttl">プラン提案</div><div class="flow-desc">最適なプランをご提案</div></div>
+      <div class="flow-step r r4"><div class="flow-num">4</div><div class="flow-ttl">運用スタート</div><div class="flow-desc">初期構築のあと運用開始🚀</div></div>
+    </div>
+
+    <!-- よくあるご質問 -->
+    <h3 class="insta-subhead r">よくある<span class="g">ご質問</span></h3>
+    <p class="insta-subhead-sub r">✦ FAQ ✦</p>
+    <div class="faq-list">
+      <div class="faq-item r">
+        <div class="faq-q"><span class="qm">Q</span><span>最低契約期間はありますか？</span></div>
+        <div class="faq-a"><span class="am">A</span><span>基本は3ヶ月〜ですが、ご事情に合わせて柔軟にご相談に応じます。</span></div>
+      </div>
+      <div class="faq-item r r2">
+        <div class="faq-q"><span class="qm">Q</span><span>写真や素材がなくても大丈夫ですか？</span></div>
+        <div class="faq-a"><span class="am">A</span><span>はい。撮影・素材づくりからサポートできます（フル運用がおすすめ）。</span></div>
+      </div>
+      <div class="faq-item r r3">
+        <div class="faq-q"><span class="qm">Q</span><span>途中でプランを変更できますか？</span></div>
+        <div class="faq-a"><span class="am">A</span><span>はい。運用状況に合わせて、いつでもプラン変更できます。</span></div>
+      </div>
+      <div class="faq-item r r4">
+        <div class="faq-q"><span class="qm">Q</span><span>地方・遠方でも依頼できますか？</span></div>
+        <div class="faq-a"><span class="am">A</span><span>オンライン完結なので、全国どこからでもご依頼いただけます🌏</span></div>
+      </div>
+    </div>
+
     <!-- what to confirm -->
     <div class="insta-check r">
       <div class="ct">✅ ご契約前に必ず確認してください</div>
@@ -1662,6 +1788,12 @@ footer {
     <p class="section-sub r" style="margin-top:30px;margin-bottom:0;">
       ※ 料金は内容により変動します。まずはお気軽にLINEでご相談ください🌟
     </p>
+
+    <!-- 最終CTA（光るボタン） -->
+    <div class="insta-final-cta r">
+      <a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" rel="noopener" class="final-cta-btn"><span class="fc-ico">💬</span>今すぐ LINEで無料相談する</a>
+      <div class="final-cta-note">✦ 相談・お見積りは無料。しつこい勧誘は一切ありません ✦</div>
+    </div>
   </div>
 </section>
 
