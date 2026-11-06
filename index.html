@@ -807,13 +807,14 @@ footer {
 
 .amakomi-char-col { position:relative; }
 .amakomi-char-img {
-  width:100%; max-width:280px;
-  /* background-removal via mix-blend-mode layering */
-  mix-blend-mode:screen;
-  filter: drop-shadow(0 0 30px rgba(255,107,157,0.5))
-          drop-shadow(0 0 60px rgba(200,100,255,0.3));
+  width:100%; max-width:260px;
+  border-radius:24px;
+  border:2px solid rgba(255,107,157,0.45);
+  box-shadow: 0 0 30px rgba(255,107,157,0.4), 0 0 60px rgba(200,100,255,0.25),
+              0 10px 30px rgba(0,0,0,0.45);
   animation: char-float 5s ease-in-out infinite;
   display:block;
+  object-fit:cover;
 }
 @keyframes char-float {
   0%,100%{transform:translateY(0);}
@@ -1325,8 +1326,8 @@ footer {
         <div class="char-aura char-aura-2"></div>
         <div class="char-aura char-aura-1"></div>
         <img class="amakomi-char-img"
-             src="banner.jpg"
-             alt="あまかみこう キャラクター">
+             src="amakomi-profile.png"
+             alt="あまかみこう プロフィール写真">
       </div>
 
       <!-- 情報列 -->
