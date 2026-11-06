@@ -983,6 +983,112 @@ footer {
   font-weight:800; margin-bottom:8px; text-transform:uppercase;
 }
 
+/* ===== INSTAGRAM PRICING SECTION ===== */
+.insta-bg {
+  background: linear-gradient(180deg, #060310 0%, #0D0A28 50%, #080420 100%);
+}
+.insta-intro {
+  max-width:620px; margin:0 auto 36px; text-align:center;
+  font-size:14px; line-height:2; color:rgba(255,255,255,0.7);
+}
+.insta-intro .pink { color:var(--pink-light); font-weight:800; }
+.insta-intro .gold { color:var(--gold2); font-weight:800; }
+
+.price-grid {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px; max-width:800px; margin:0 auto;
+}
+.price-card {
+  position:relative;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,107,157,0.2);
+  border-radius:22px; padding:30px 22px 26px;
+  display:flex; flex-direction:column;
+  backdrop-filter:blur(8px);
+  transition:transform 0.25s, box-shadow 0.25s;
+}
+.price-card:hover {
+  transform:translateY(-6px);
+  box-shadow:0 12px 40px rgba(255,107,157,0.18);
+}
+.price-card.featured {
+  border:1.5px solid rgba(245,200,66,0.5);
+  background:linear-gradient(170deg, rgba(245,200,66,0.08), rgba(255,107,157,0.05));
+  box-shadow:0 0 40px rgba(245,200,66,0.12);
+}
+.price-badge {
+  position:absolute; top:-13px; left:50%; transform:translateX(-50%);
+  background:linear-gradient(135deg,var(--gold),#FFA040);
+  color:#2A1800; font-size:11px; font-weight:900;
+  padding:5px 18px; border-radius:30px; letter-spacing:1px;
+  white-space:nowrap;
+  box-shadow:0 4px 16px rgba(245,200,66,0.4);
+}
+.price-plan {
+  font-size:13px; font-weight:800; letter-spacing:2px;
+  color:var(--pink-light); margin-bottom:10px; text-align:center;
+}
+.price-card.featured .price-plan { color:var(--gold2); }
+.price-amount { text-align:center; margin-bottom:4px; }
+.price-amount .yen { font-size:16px; font-weight:800; color:#fff; vertical-align:top; }
+.price-amount .num { font-size:30px; font-weight:900; color:#fff; line-height:1; }
+.price-amount .per { font-size:12px; color:rgba(255,255,255,0.45); }
+.price-tax { text-align:center; font-size:10px; color:rgba(255,255,255,0.3); margin-bottom:16px; }
+.price-desc {
+  font-size:12px; color:rgba(255,255,255,0.55); text-align:center;
+  line-height:1.7; margin-bottom:16px;
+  padding-bottom:16px; border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.price-feat { list-style:none; display:flex; flex-direction:column; gap:11px; flex:1; }
+.price-feat li {
+  display:flex; align-items:flex-start; gap:9px;
+  font-size:13px; line-height:1.6; color:rgba(255,255,255,0.8); font-weight:700;
+}
+.price-feat li .fc { color:var(--pink); flex-shrink:0; font-weight:900; }
+.price-feat li strong { color:#fff; }
+.price-card.featured .price-feat li .fc { color:var(--gold2); }
+
+.insta-notes {
+  max-width:800px; margin:34px auto 0;
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px;
+}
+.insta-note-card {
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px; padding:18px 20px;
+}
+.insta-note-card .nt {
+  font-size:12px; font-weight:800; color:var(--pink-light);
+  letter-spacing:1px; margin-bottom:10px;
+}
+.insta-note-card .nrow {
+  display:flex; justify-content:space-between; align-items:center; gap:10px;
+  font-size:12.5px; color:rgba(255,255,255,0.7); font-weight:700;
+  padding:5px 0; border-bottom:1px dashed rgba(255,255,255,0.08);
+}
+.insta-note-card .nrow:last-child { border-bottom:none; }
+.insta-note-card .nrow .np { color:#fff; font-weight:900; white-space:nowrap; }
+
+.insta-check {
+  max-width:620px; margin:30px auto 0;
+  background:rgba(255,107,157,0.07);
+  border:1px solid rgba(255,107,157,0.2);
+  border-radius:16px; padding:20px 24px;
+}
+.insta-check .ct {
+  font-size:12px; letter-spacing:2px; color:var(--pink-light);
+  font-weight:800; margin-bottom:12px;
+}
+.insta-check ul { list-style:none; }
+.insta-check li {
+  font-size:13px; line-height:1.8; color:rgba(255,255,255,0.8); font-weight:700;
+  padding-left:22px; position:relative; margin-bottom:6px;
+}
+.insta-check li:last-child { margin-bottom:0; }
+.insta-check li::before {
+  content:'✓'; position:absolute; left:0; color:var(--gold2); font-weight:900;
+}
+
 </style>
 </head>
 <body>
@@ -1406,6 +1512,106 @@ footer {
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- wave -->
+<div class="wave">
+  <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:40px;background:#060310;">
+    <path d="M0,25 C300,0 600,50 900,20 C1100,5 1300,40 1440,25 L1440,50 L0,50Z" fill="#0D0A28"/>
+  </svg>
+</div>
+
+<!-- ===== INSTAGRAM PRICING ===== -->
+<section class="insta-bg" id="price">
+  <div class="section-inner">
+    <div class="section-star-label r"><span class="star-label-text">✦ INSTAGRAM SERVICE ✦</span></div>
+    <h2 class="section-heading r">Instagram<span class="gold-word">運用代行</span>・料金</h2>
+    <p class="section-sub r">アカウント構築から毎月の運用まで、まるごとお任せ</p>
+
+    <p class="insta-intro r">
+      「投稿する時間がない」「何を出せばいいかわからない」——<br>
+      そんな方のために、<span class="pink">世界観づくり</span>から<span class="gold">リール制作・分析</span>まで代行します📱✨
+    </p>
+
+    <div class="price-grid">
+      <!-- Light -->
+      <div class="price-card r">
+        <div class="price-plan">LIGHT ／ ライト</div>
+        <div class="price-amount"><span class="yen">¥</span><span class="num">50,000</span><span class="per"> 〜 / 月</span></div>
+        <div class="price-tax">税込 ¥55,000〜</div>
+        <div class="price-desc">まずは小さく始めたい方へ。<br>投稿の土台を安定させるプラン</div>
+        <ul class="price-feat">
+          <li><span class="fc">✦</span><span>フィード投稿 <strong>月8本</strong>（週2）</span></li>
+          <li><span class="fc">✦</span><span>キャプション・ハッシュタグ作成</span></li>
+          <li><span class="fc">✦</span><span>ストーリーズ 月4本</span></li>
+          <li><span class="fc">✦</span><span>月1回の簡易レポート</span></li>
+        </ul>
+      </div>
+
+      <!-- Standard (featured) -->
+      <div class="price-card featured r r2">
+        <div class="price-badge">⭐ 一番人気</div>
+        <div class="price-plan">STANDARD ／ スタンダード</div>
+        <div class="price-amount"><span class="yen">¥</span><span class="num">150,000</span><span class="per"> 〜 / 月</span></div>
+        <div class="price-tax">税込 ¥165,000〜</div>
+        <div class="price-desc">伸ばしたい方の定番。<br>リール制作込みでしっかり運用</div>
+        <ul class="price-feat">
+          <li><span class="fc">✦</span><span>フィード投稿 <strong>月12本</strong></span></li>
+          <li><span class="fc">✦</span><span>リール制作 <strong>月4本</strong></span></li>
+          <li><span class="fc">✦</span><span>ストーリーズ 月8本</span></li>
+          <li><span class="fc">✦</span><span>毎月の分析レポート＋改善提案</span></li>
+          <li><span class="fc">✦</span><span>コメント・DM一次対応</span></li>
+        </ul>
+      </div>
+
+      <!-- Full -->
+      <div class="price-card r r3">
+        <div class="price-plan">FULL ／ フル運用</div>
+        <div class="price-amount"><span class="yen">¥</span><span class="num">300,000</span><span class="per"> 〜 / 月</span></div>
+        <div class="price-tax">税込 ¥330,000〜</div>
+        <div class="price-desc">本気で育てたい方へ。<br>戦略・撮影まで一気通貫</div>
+        <ul class="price-feat">
+          <li><span class="fc">✦</span><span>戦略設計・運用方針づくり</span></li>
+          <li><span class="fc">✦</span><span>リール量産 <strong>月8本〜</strong></span></li>
+          <li><span class="fc">✦</span><span>撮影・素材制作ディレクション</span></li>
+          <li><span class="fc">✦</span><span>フィード・ストーリーズ無制限相談</span></li>
+          <li><span class="fc">✦</span><span>毎月の改善ミーティング</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- setup fee + unit price reference -->
+    <div class="insta-notes">
+      <div class="insta-note-card r">
+        <div class="nt">🏗 初期構築費（一度きり）</div>
+        <div class="nrow"><span>アカウント開設・初期設定</span><span class="np">¥0〜3万</span></div>
+        <div class="nrow"><span>プロフィール＋世界観設計</span><span class="np">¥3〜10万</span></div>
+        <div class="nrow"><span>戦略設計・初期投稿制作込み</span><span class="np">¥20〜50万</span></div>
+      </div>
+      <div class="insta-note-card r r2">
+        <div class="nt">📊 投稿単価の目安（スポット）</div>
+        <div class="nrow"><span>フィード画像</span><span class="np">¥3,000〜1万 / 本</span></div>
+        <div class="nrow"><span>リール（動画）</span><span class="np">¥1.5〜5万 / 本</span></div>
+        <div class="nrow"><span>ストーリーズ</span><span class="np">¥1,000〜3,000 / 本</span></div>
+      </div>
+    </div>
+
+    <!-- what to confirm -->
+    <div class="insta-check r">
+      <div class="ct">✅ ご契約前に必ず確認してください</div>
+      <ul>
+        <li>投稿の本数・種類が明記されているか</li>
+        <li>撮影・素材の提供はどちらが行うか</li>
+        <li>レポートの有無と頻度</li>
+        <li>アカウントの所有権・ログイン情報はご自身が保持</li>
+        <li>最低契約期間（3〜6ヶ月が一般的）</li>
+      </ul>
+    </div>
+
+    <p class="section-sub r" style="margin-top:30px;margin-bottom:0;">
+      ※ 料金は内容により変動します。まずはお気軽にLINEでご相談ください🌟
+    </p>
   </div>
 </section>
 
