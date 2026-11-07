@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="全8回で、あなたの自分史をKindleの電子書籍として出版するところまで、仲間と一緒に伴走する講座。1期は2027年1月16日（土）スタート、5〜8名限定。無料説明会は12/5・12/10・12/16。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="自分史の輪 1期生募集｜あなたの人生を、1冊の本にしませんか。">
+<meta property="og:description" content="全8回で、あなたの自分史をKindleの電子書籍として出版するところまで、仲間と一緒に伴走する講座。1期は2027年1月16日（土）スタート、5〜8名限定。無料説明会は12/5・12/10・12/16。">
+<style>
+  /* ページの土台：余白をそろえ、スマホの端にも対応 */
+  html{-webkit-text-size-adjust:100%}
+  :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+  body{margin:0}
+  img{max-width:100%}
+  a:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+</style>
+<title>自分史の輪 1期生募集</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+  /* Layout: お客様向けの募集ページ。物語→中身→条件→申込の順に縦に読ませる */
+  :root{
+    --bg:#F6F4EF; --surface:#FFFFFF; --surface-2:#EFEBE2;
+    --fg:#22252B; --muted:#6A6256; --line:#E0DACD;
+    --indigo:#234B78; --indigo-soft:#E6EEF6; --hero:#16345A;
+    --gold:#B07722; --gold-soft:#F3E8D2;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#15181D; --surface:#1E222A; --surface-2:#242933;
+      --fg:#ECE7DD; --muted:#A49C8D; --line:#333A45;
+      --indigo:#7FB0DD; --indigo-soft:#1E2E40; --hero:#12294A;
+      --gold:#E0A84E; --gold-soft:#332814;
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#15181D; --surface:#1E222A; --surface-2:#242933;
+    --fg:#ECE7DD; --muted:#A49C8D; --line:#333A45;
+    --indigo:#7FB0DD; --indigo-soft:#1E2E40; --hero:#12294A;
+    --gold:#E0A84E; --gold-soft:#332814;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--bg); color:var(--fg);
+    font-family:"Zen Kaku Gothic New",-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif;
+    line-height:1.85; font-size:16px; letter-spacing:.01em;}
+  .wrap{max-width:720px; margin-inline:auto;
+    padding-left:max(20px,env(safe-area-inset-left,0px));
+    padding-right:max(20px,env(safe-area-inset-right,0px));}
+  h1,h2,h3{font-family:"Shippori Mincho","Hiragino Mincho ProN",serif; text-wrap:balance; line-height:1.45;}
+  .eyebrow{font-size:12px; letter-spacing:.22em; color:var(--gold); font-weight:700; margin:0 0 10px;}
+
+  .hero{background:radial-gradient(circle at 88% -10%, rgba(224,168,78,.55), transparent 55%), radial-gradient(circle at 0% 110%, rgba(224,168,78,.18), transparent 45%), var(--hero); color:#fff;}
+  .hero .wrap{padding-block:60px 52px;}
+  .hero .eyebrow{color:#E7C98A;}
+  .hero h1{font-size:clamp(28px,6vw,46px); font-weight:800; margin:0 0 18px; color:#fff;}
+  .hero h1 span{color:#F0D9A6;}
+  .hero p{margin:0; color:#DCE5EF; font-size:16.5px;}
+  .badges{display:flex; flex-wrap:wrap; gap:8px; margin-top:24px;}
+  .badges span{background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.22); border-radius:999px; padding:6px 14px; font-size:13px;}
+
+  section{padding-block:48px;}
+  section.alt{background:var(--surface-2);}
+  h2{font-size:clamp(22px,4vw,29px); font-weight:800; margin:0 0 14px;}
+  p{margin:0 0 14px;}
+  .muted{color:var(--muted);}
+
+  .letter{font-family:"Shippori Mincho",serif; font-size:17px; line-height:2;}
+  .sign{text-align:right; font-family:"Shippori Mincho",serif; font-weight:700; margin-top:8px;}
+
+  .checks{list-style:none; margin:0; padding:0; display:grid; gap:10px;}
+  .checks li{background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:12px 16px 12px 44px; position:relative;}
+  .checks li::before{content:"✓"; position:absolute; left:16px; top:12px; color:var(--gold); font-weight:700;}
+
+  .steps{display:grid; gap:10px;}
+  .st{display:grid; grid-template-columns:44px 1fr; gap:12px; align-items:start; background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:14px 16px;}
+  .st .n{width:34px; height:34px; border-radius:50%; background:var(--hero); color:#fff; font-family:"Shippori Mincho",serif; font-weight:700; display:flex; align-items:center; justify-content:center;}
+  .st h3{margin:0 0 2px; font-size:16px;}
+  .st p{margin:0; font-size:14px; color:var(--muted);}
+
+  .senpai{background:var(--gold-soft); border-left:5px solid var(--gold); border-radius:6px; padding:18px 20px;}
+
+  .table-wrap{overflow-x:auto;}
+  table{width:100%; border-collapse:collapse; background:var(--surface); border:1px solid var(--line); border-radius:8px; font-size:15px;}
+  th,td{text-align:left; padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top;}
+  th{width:32%; color:var(--muted); font-weight:700; font-size:14px; background:var(--surface-2);}
+  tr:last-child th, tr:last-child td{border-bottom:none;}
+
+  .price{background:var(--surface); border:2px solid var(--gold); border-radius:12px; padding:24px; text-align:center;}
+  .price .tag{display:inline-block; background:var(--gold); color:#fff; font-size:12px; font-weight:700; padding:3px 12px; border-radius:999px;}
+  .price .big{font-family:"Shippori Mincho",serif; font-size:clamp(34px,8vw,46px); font-weight:800; margin:10px 0 0; font-variant-numeric:tabular-nums;}
+  .price .big small{font-size:16px; font-weight:500; color:var(--muted);}
+  .price .base{color:var(--muted); font-size:14px; margin:4px 0 0;}
+  .price .reg{font-size:13px; color:var(--muted); margin:12px 0 0;}
+
+  .faq dt{font-weight:700; margin-top:16px;}
+  .faq dt::before{content:"Q. "; color:var(--gold);}
+  .faq dd{margin:4px 0 0; color:var(--muted);}
+
+  .apply{background:var(--hero); color:#fff; text-align:center;}
+  .apply h2{color:#fff;}
+  .apply p{color:#DCE5EF;}
+  .flow{display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin:20px 0;}
+  .flow span{background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.22); border-radius:8px; padding:8px 14px; font-size:14px;}
+  .contact{background:rgba(255,255,255,.1); border:1px dashed rgba(255,255,255,.4); border-radius:10px; padding:16px; margin-top:12px; color:#F0D9A6; font-weight:700;}
+
+  footer{padding-block:24px; color:var(--muted); font-size:12.5px; text-align:center;}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">自分史の輪 ／ 1期生募集</p>
+    <h1>あなたの人生を、<br><span>1冊の本</span>にしませんか。</h1>
+    <p>書いて終わりにしない自分史講座。全8回で、あなたの自分史をKindleの電子書籍として出版するところまで、仲間と一緒に伴走します。</p>
+    <div class="badges">
+      <span>全8回・約4ヶ月</span><span>オンライン50分</span><span>5〜8名限定</span><span>2027年1月16日（土）スタート</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">はじめに</p>
+    <div class="letter">
+      <p>生まれてから今日まで、あなたが歩いてきた道は、あなたにしか書けない物語です。</p>
+      <p>「いつか書きたい」と思いながら、何から始めればいいか分からない。書きはじめても、途中で止まってしまう。そんな声をたくさん聞いてきました。</p>
+      <p>だから、ひとりで書かなくていい場所をつくりました。毎日30分、仲間と励まし合いながら書き進めて、4ヶ月後には、手に取れるあなたの本が世界に出ています。</p>
+      <p>その本は、いつかご家族や大切な人が、人生の分かれ道で開く一冊になります。そしてKindleで世に出すことで、まだ会ったことのない誰かの勇気にもなります。</p>
+      <p>やればできる。継続は力なり。一緒に、あなたの1冊を生み出しましょう。</p>
+    </div>
+    <p class="sign">主宰　妙高</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">こんな方へ</p>
+    <h2>ひとつでも当てはまったら</h2>
+    <ul class="checks">
+      <li>自分の人生を、家族や大切な人に残したい</li>
+      <li>「いつか本を出したい」と思い続けている</li>
+      <li>書きはじめても、ひとりだと続かない</li>
+      <li>Kindle出版に興味はあるけれど、やり方が分からない</li>
+      <li>同じ想いの仲間と、楽しく書き進めたい</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">講座の流れ</p>
+    <h2>全8回で、棚卸しから出版まで</h2>
+    <p class="muted">月2回、オンライン（Google Meet）で50分。毎回、短いレッスンと、書いたものを見せ合う時間があります。</p>
+    <div class="steps">
+      <div class="st"><div class="n">1</div><div><h3>オリエン＆棚卸し</h3><p>仲間と出会い、人生年表づくりをはじめる</p></div></div>
+      <div class="st"><div class="n">2</div><div><h3>テーマ発見</h3><p>いちばん伝えたい1本の軸と、仮タイトルを決める</p></div></div>
+      <div class="st"><div class="n">3</div><div><h3>書きはじめる</h3><p>書き方のコツを学び、毎日30分の習慣をスタート</p></div></div>
+      <div class="st"><div class="n">4</div><div><h3>光と影を書く</h3><p>辛かった記憶にもそっと触れ、止まった所はみんなで解決する</p></div></div>
+      <div class="st"><div class="n">5</div><div><h3>整える</h3><p>章立てと推敲で、読みやすい形に</p></div></div>
+      <div class="st"><div class="n">6</div><div><h3>出版準備</h3><p>Kindle出版のしくみと、表紙のつくり方</p></div></div>
+      <div class="st"><div class="n">7</div><div><h3>入稿サポート</h3><p>みんなで一緒に、実際にKindleへ入稿</p></div></div>
+      <div class="st"><div class="n">8</div><div><h3>お披露目会</h3><p>全員の出版をお祝いし、本を届ける方法を学ぶ</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">先輩がいます</p>
+    <div class="senpai">
+      <h2 style="font-size:22px; margin-bottom:8px">0期生・よしえさんも、先輩として参加します</h2>
+      <p style="margin:0">妙高のもとで自分の人生を一冊にまとめ、出版を果たしたよしえさん。書きはじめの迷いも、出版までの道のりも知っている先輩が、ときどき体験を語りに来てくれます。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">募集要項</p>
+    <h2>1期の概要</h2>
+    <div class="table-wrap">
+      <table>
+        <tr><th>開講</th><td>2027年1月16日（土）スタート</td></tr>
+        <tr><th>回数・期間</th><td>全8回（隔週の土曜）・約4ヶ月</td></tr>
+        <tr><th>日程</th><td>1/16・1/30・2/13・2/27・3/13・3/27・4/10・4/24（すべて土曜 10:00〜10:50）</td></tr>
+        <tr><th>形式</th><td>オンライン（Google Meet）・1回50分</td></tr>
+        <tr><th>定員</th><td>5〜8名（少人数制）</td></tr>
+        <tr><th>ゴール</th><td>あなたの自分史を、Kindleの電子書籍として出版</td></tr>
+        <tr><th>欠席したとき</th><td>録画でご覧いただけます</td></tr>
+        <tr><th>お支払い</th><td>銀行振込・一括（分割はございません）</td></tr>
+        <tr><th>申込締切</th><td>12月20日（日）。お振込みは12月25日（金）まで</td></tr>
+        <tr><th>キャンセル</th><td>開講の3日前（1月13日（水））までのご連絡で、振込手数料を差し引いて返金。それ以降は返金いたしかねます</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">受講料</p>
+    <div class="price">
+      <span class="tag">1期 モニター価格</span>
+      <div class="big">¥54,780<small>（税込）</small></div>
+      <p class="base">本体価格 ¥49,800 ＋ 消費税</p>
+      <p class="reg">2期以降の通常価格は ¥107,800（税込）の予定です。<br>1期は少人数のモニター価格でご案内します。</p>
+    </div>
+    <p class="muted" style="margin-top:18px; font-size:14px">本講座は電子書籍（Kindle）の出版までです。卒業後、ご家族に手渡せる紙の本（ペーパーバック）にしたい方には、もう一度ご自分の本を読み込んで書き直し、紙の本に仕上げる「第2部 紙の本コース」（全3回・¥54,780 税込）をご用意しています。ご自分で直す時間がない方には、紙の本への作り直しをお任せいただける代行（¥48,400 税込／1冊）もございます。</p>
+    <p class="muted" style="margin-top:10px; font-size:14px">人生の大切な場面を漫画にしたい方には、BlueHandsEagle13 が漫画をお描きします（2ページ ¥11,000 税込）。</p>
+    <p class="muted" style="margin-top:10px; font-size:14px">マンツーマンでじっくり伴走してほしい方には、このグループ講座をまるごと含む「プレミアム個別コース」（¥330,000 税込）もございます。くわしくは説明会でご相談ください。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">よくあるご質問</p>
+    <dl class="faq">
+      <dt>文章を書いたことがなくても大丈夫ですか？</dt>
+      <dd>大丈夫です。年表づくりから一歩ずつ進めます。上手に書くより、まず書き出すことを大切にしています。</dd>
+      <dt>パソコンが苦手です。</dt>
+      <dd>Kindleへの入稿は、第7回にみんなで一緒に行います。その場でつまずきを解決します。</dd>
+      <dt>もっと個別に見てほしいときは？</dt>
+      <dd>マンツーマンの相談や個別補修を、別料金のオプションでご用意しています。</dd>
+      <dt>講座が終わったあとは？</dt>
+      <dd>卒業生のための月額コミュニティ「輪」があります。2冊目を書く仲間とつながり続けられます。</dd>
+      <dt>辛い思い出も書かないといけませんか？</dt>
+      <dd>いいえ。書くのも、みんなに話すのも自由です。書ける部分だけで大丈夫です。</dd>
+      <dt>回と回のあいだは、ひとりで書くのですか？</dt>
+      <dd>受講生だけのLINEオープンチャット（ニックネームで参加できます）で、毎日の進み具合をひと言報告し合います。書けない日は10分だけでも大丈夫です。</dd>
+      <dt>読んでおくとよい本はありますか？</dt>
+      <dd>おすすめの本を、説明会でご紹介します。</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="apply">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#E7C98A">お申込み</p>
+    <h2>まずは、無料説明会へ</h2>
+    <p>講座の中身や雰囲気を、50分の無料オンライン説明会でお話しします。ご質問もお気軽にどうぞ。</p>
+    <p><b style="color:#F0D9A6">第1回　12月5日（土）10:00〜10:50</b><br><b style="color:#F0D9A6">第2回　12月10日（木）20:00〜20:50</b><br><b style="color:#F0D9A6">第3回　12月16日（水）20:00〜20:50</b></p>
+    <p style="font-size:14px">説明会は何度でもご参加いただけます。どの回もご都合がつかない方には、説明会の録画をお送りします（12月20日までご覧いただけます）。</p>
+    <div class="flow"><span>① 無料説明会</span><span>② お申込み</span><span>③ お振込み</span><span>④ 開講</span></div>
+    <div class="contact">説明会のご予約・お申込みは<br><a href="https://forms.gle/5kcE3Bubw93mpwW46" style="color:inherit; text-decoration:underline">こちらのフォームから</a><br><span style="font-size:13px; font-weight:500; color:#DCE5EF">いただいた情報は、講座のご案内とご連絡にだけ使います。</span></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">あまかみ 自分史の輪　｜　表示価格は税込です　｜　<a href="tokusho.html" style="color:inherit">特定商取引法に基づく表記</a></div>
+</footer>
+</body>
+</html>
