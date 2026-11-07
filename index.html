@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>💫 夢を叶える AIで勝ち組へ | 白澤さんの無料AI戦略セミナー</title>
+<title>📱 Instagram運用代行｜あまかみこう - 世界観づくりから運用まで</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800;900&family=Noto+Sans+JP:wght@400;700;900&display=swap');
 
@@ -247,6 +247,23 @@ body { font-family:var(--font); background:var(--navy); color:#fff; overflow-x:h
   50% { box-shadow:0 6px 50px rgba(255,68,153,0.8), 0 0 80px rgba(255,68,153,0.3); }
 }
 .hero-cta:hover { transform:translateY(-4px) scale(1.03); }
+
+/* hero impact facts bar */
+.hero-facts {
+  display:flex; gap:10px; justify-content:center; flex-wrap:wrap;
+  margin:2px 0 30px; position:relative; z-index:1;
+}
+.hf {
+  background:rgba(255,255,255,0.05); border:1px solid rgba(245,200,66,0.3);
+  border-radius:14px; padding:11px 18px; min-width:94px; text-align:center;
+  backdrop-filter:blur(8px);
+}
+.hf-n {
+  font-size:clamp(15px,4.5vw,20px); font-weight:900;
+  background:linear-gradient(135deg,var(--gold),#FFD060);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.hf-l { font-size:11px; color:rgba(255,255,255,0.55); margin-top:3px; font-weight:700; }
 
 .hero-scroll-hint {
   position:absolute; bottom:30px; left:50%; transform:translateX(-50%);
@@ -790,13 +807,14 @@ footer {
 
 .amakomi-char-col { position:relative; }
 .amakomi-char-img {
-  width:100%; max-width:280px;
-  /* background-removal via mix-blend-mode layering */
-  mix-blend-mode:screen;
-  filter: drop-shadow(0 0 30px rgba(255,107,157,0.5))
-          drop-shadow(0 0 60px rgba(200,100,255,0.3));
+  width:100%; max-width:260px;
+  border-radius:24px;
+  border:2px solid rgba(255,107,157,0.45);
+  box-shadow: 0 0 30px rgba(255,107,157,0.4), 0 0 60px rgba(200,100,255,0.25),
+              0 10px 30px rgba(0,0,0,0.45);
   animation: char-float 5s ease-in-out infinite;
   display:block;
+  object-fit:cover;
 }
 @keyframes char-float {
   0%,100%{transform:translateY(0);}
@@ -983,6 +1001,261 @@ footer {
   font-weight:800; margin-bottom:8px; text-transform:uppercase;
 }
 
+/* ===== INSTAGRAM PRICING SECTION ===== */
+.insta-bg {
+  background: linear-gradient(180deg, #060310 0%, #0D0A28 50%, #080420 100%);
+}
+/* widen this section so 3 plans sit side by side on desktop */
+.insta-bg .section-inner { max-width:900px; }
+.insta-intro {
+  max-width:620px; margin:0 auto 36px; text-align:center;
+  font-size:14px; line-height:2; color:rgba(255,255,255,0.7);
+}
+.insta-intro .pink { color:var(--pink-light); font-weight:800; }
+.insta-intro .gold { color:var(--gold2); font-weight:800; }
+
+.price-note-top {
+  max-width:620px; margin:0 auto 22px; text-align:center;
+  background:rgba(245,200,66,0.08); border:1px solid rgba(245,200,66,0.3);
+  border-radius:14px; padding:12px 18px;
+  font-size:13px; color:rgba(255,255,255,0.82); font-weight:700; line-height:1.8;
+}
+.price-note-top strong { color:var(--gold2); }
+
+.price-grid {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px; max-width:800px; margin:0 auto;
+}
+.price-card {
+  position:relative;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,107,157,0.2);
+  border-radius:22px; padding:30px 22px 26px;
+  display:flex; flex-direction:column;
+  backdrop-filter:blur(8px);
+  transition:transform 0.25s, box-shadow 0.25s;
+}
+.price-card:hover {
+  transform:translateY(-6px);
+  box-shadow:0 12px 40px rgba(255,107,157,0.18);
+}
+.price-card.featured {
+  border:1.5px solid rgba(245,200,66,0.5);
+  background:linear-gradient(170deg, rgba(245,200,66,0.08), rgba(255,107,157,0.05));
+  box-shadow:0 0 40px rgba(245,200,66,0.12);
+}
+.price-badge {
+  position:absolute; top:-13px; left:50%; transform:translateX(-50%);
+  background:linear-gradient(135deg,var(--gold),#FFA040);
+  color:#2A1800; font-size:11px; font-weight:900;
+  padding:5px 18px; border-radius:30px; letter-spacing:1px;
+  white-space:nowrap;
+  box-shadow:0 4px 16px rgba(245,200,66,0.4);
+}
+.price-plan {
+  font-size:13px; font-weight:800; letter-spacing:2px;
+  color:var(--pink-light); margin-bottom:10px; text-align:center;
+}
+.price-card.featured .price-plan { color:var(--gold2); }
+.price-amount { text-align:center; margin-bottom:4px; }
+.price-amount .yen { font-size:16px; font-weight:800; color:#fff; vertical-align:top; }
+.price-amount .num { font-size:30px; font-weight:900; color:#fff; line-height:1; }
+.price-amount .per { font-size:12px; color:rgba(255,255,255,0.45); }
+.price-tax { text-align:center; font-size:10px; color:rgba(255,255,255,0.3); margin-bottom:12px; }
+.price-setup {
+  display:block; width:fit-content; margin:0 auto 16px;
+  font-size:12px; font-weight:800; letter-spacing:0.5px;
+  padding:6px 14px; border-radius:30px; white-space:nowrap;
+  color:var(--pink-light);
+  background:rgba(255,107,157,0.1); border:1px solid rgba(255,107,157,0.3);
+}
+.price-card.featured .price-setup {
+  color:var(--gold2);
+  background:rgba(245,200,66,0.1); border-color:rgba(245,200,66,0.35);
+}
+.price-setup.included {
+  color:#2A1800;
+  background:linear-gradient(135deg,var(--gold),#FFA040);
+  border:none; box-shadow:0 3px 14px rgba(245,200,66,0.35);
+}
+.price-desc {
+  font-size:12px; color:rgba(255,255,255,0.55); text-align:center;
+  line-height:1.7; margin-bottom:16px;
+  padding-bottom:16px; border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.price-feat { list-style:none; display:flex; flex-direction:column; gap:11px; flex:1; }
+.price-feat li {
+  display:flex; align-items:flex-start; gap:9px;
+  font-size:13px; line-height:1.6; color:rgba(255,255,255,0.8); font-weight:700;
+}
+.price-feat li .fc { color:var(--pink); flex-shrink:0; font-weight:900; }
+.price-feat li strong { color:#fff; }
+.price-card.featured .price-feat li .fc { color:var(--gold2); }
+
+/* per-plan LINE button (glowing) */
+.price-cta {
+  display:flex; align-items:center; justify-content:center; gap:9px;
+  margin-top:22px; padding:15px 16px;
+  border-radius:14px; text-decoration:none;
+  font-size:15px; font-weight:900; letter-spacing:0.5px;
+  background:linear-gradient(135deg,#06C755,#00A848); border:none;
+  color:#fff;
+  box-shadow:0 4px 20px rgba(6,199,85,0.45);
+  animation:line-glow 2.2s ease-in-out infinite;
+  transition:transform 0.2s;
+}
+.price-cta:hover { transform:translateY(-3px) scale(1.02); }
+.price-cta .li-ico {
+  width:24px; height:24px; border-radius:7px; background:rgba(255,255,255,0.22);
+  display:flex; align-items:center; justify-content:center;
+  font-size:13px; flex-shrink:0;
+}
+.price-card.featured .price-cta {
+  box-shadow:0 6px 26px rgba(6,199,85,0.6), 0 0 40px rgba(6,199,85,0.25);
+}
+@keyframes line-glow {
+  0%,100% { box-shadow:0 4px 20px rgba(6,199,85,0.4); }
+  50% { box-shadow:0 6px 34px rgba(6,199,85,0.78), 0 0 50px rgba(6,199,85,0.32); }
+}
+
+.insta-notes {
+  max-width:800px; margin:34px auto 0;
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px;
+}
+.insta-note-card {
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px; padding:18px 20px;
+}
+.insta-note-card .nt {
+  font-size:12px; font-weight:800; color:var(--pink-light);
+  letter-spacing:1px; margin-bottom:10px;
+}
+.insta-note-card .nrow {
+  display:flex; justify-content:space-between; align-items:center; gap:10px;
+  font-size:12.5px; color:rgba(255,255,255,0.7); font-weight:700;
+  padding:5px 0; border-bottom:1px dashed rgba(255,255,255,0.08);
+}
+.insta-note-card .nrow:last-child { border-bottom:none; }
+.insta-note-card .nrow .np { color:#fff; font-weight:900; white-space:nowrap; }
+
+.insta-check {
+  max-width:620px; margin:30px auto 0;
+  background:rgba(255,107,157,0.07);
+  border:1px solid rgba(255,107,157,0.2);
+  border-radius:16px; padding:20px 24px;
+}
+.insta-check .ct {
+  font-size:12px; letter-spacing:2px; color:var(--pink-light);
+  font-weight:800; margin-bottom:12px;
+}
+.insta-check ul { list-style:none; }
+.insta-check li {
+  font-size:13px; line-height:1.8; color:rgba(255,255,255,0.8); font-weight:700;
+  padding-left:22px; position:relative; margin-bottom:6px;
+}
+.insta-check li:last-child { margin-bottom:0; }
+.insta-check li::before {
+  content:'✓'; position:absolute; left:0; color:var(--gold2); font-weight:900;
+}
+
+/* === INSTAGRAM section: conversion blocks (seminar-LP energy, cosmic theme) === */
+.insta-subhead {
+  text-align:center; font-size:clamp(18px,4.8vw,26px); font-weight:900;
+  color:#fff; margin:54px 0 4px;
+}
+.insta-subhead .g {
+  background:linear-gradient(135deg,var(--gold),#FFD060);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.insta-subhead-sub {
+  text-align:center; font-size:11px; color:var(--pink-light);
+  letter-spacing:3px; font-weight:700; margin-bottom:24px; opacity:0.85;
+}
+
+/* こんな方におすすめ */
+.insta-reco { max-width:620px; margin:0 auto; display:flex; flex-direction:column; gap:10px; }
+.reco-item {
+  display:flex; align-items:center; gap:14px; padding:15px 18px;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,107,157,0.18);
+  border-left:3px solid var(--pink);
+  border-radius:0 14px 14px 0;
+  transition:transform 0.2s, box-shadow 0.2s;
+}
+.reco-item:hover { transform:translateX(5px); box-shadow:0 4px 18px rgba(255,107,157,0.12); }
+.reco-ico {
+  width:36px; height:36px; border-radius:50%; flex-shrink:0;
+  background:linear-gradient(135deg,var(--pink),#FF7733);
+  display:flex; align-items:center; justify-content:center; font-size:17px;
+  box-shadow:0 0 16px rgba(255,107,157,0.5);
+}
+.reco-txt { font-size:14px; font-weight:700; color:rgba(255,255,255,0.85); line-height:1.6; }
+
+/* ご依頼の流れ */
+.flow-grid {
+  max-width:680px; margin:0 auto;
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(135px,1fr)); gap:12px;
+}
+.flow-step {
+  text-align:center; position:relative;
+  background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px; padding:20px 14px;
+}
+.flow-num {
+  width:42px; height:42px; margin:0 auto 10px; border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),#FFA040); color:#2A1800;
+  font-weight:900; font-size:18px;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 0 18px rgba(245,200,66,0.5);
+}
+.flow-ttl { font-size:13px; font-weight:800; color:#fff; margin-bottom:5px; }
+.flow-desc { font-size:11px; color:rgba(255,255,255,0.55); line-height:1.6; }
+
+/* FAQ */
+.faq-list { max-width:620px; margin:0 auto; display:flex; flex-direction:column; gap:10px; }
+.faq-item {
+  background:rgba(255,255,255,0.04); border:1px solid rgba(255,107,157,0.15);
+  border-radius:14px; padding:16px 18px;
+}
+.faq-q { display:flex; gap:10px; font-size:14px; font-weight:800; color:#fff; align-items:flex-start; }
+.faq-q .qm { color:var(--pink); font-weight:900; flex-shrink:0; }
+.faq-a {
+  display:flex; gap:10px; font-size:13px; color:rgba(255,255,255,0.65);
+  line-height:1.8; margin-top:9px; padding-top:9px; border-top:1px solid rgba(255,255,255,0.08);
+}
+.faq-a .am { color:var(--gold2); font-weight:900; flex-shrink:0; }
+
+/* 最終CTA（光るボタン） */
+.insta-final-cta { text-align:center; margin:44px auto 0; }
+.final-cta-btn {
+  display:inline-flex; align-items:center; gap:12px;
+  background:linear-gradient(135deg,#06C755,#00A848); color:#fff;
+  font-family:var(--font); font-size:clamp(16px,4.5vw,21px); font-weight:900;
+  padding:20px 46px; border-radius:50px; text-decoration:none;
+  box-shadow:0 6px 30px rgba(6,199,85,0.5);
+  animation:line-glow 2.2s ease-in-out infinite; transition:transform 0.2s;
+}
+.final-cta-btn:hover { transform:translateY(-4px) scale(1.03); }
+.final-cta-btn .fc-ico {
+  width:30px; height:30px; border-radius:9px; background:rgba(255,255,255,0.2);
+  display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0;
+}
+.final-cta-note { margin-top:14px; font-size:12px; color:rgba(255,255,255,0.4); }
+
+/* amakomi SNS / links */
+.amakomi-links { display:flex; flex-wrap:wrap; gap:8px; }
+.link-pill {
+  display:inline-flex; align-items:center; gap:5px;
+  background:rgba(255,255,255,0.05); border:1px solid rgba(255,107,157,0.25);
+  border-radius:20px; padding:6px 13px; text-decoration:none;
+  font-size:12px; font-weight:800; color:var(--pink-light);
+  transition:transform 0.15s, background 0.15s;
+}
+.link-pill:hover { transform:translateY(-2px); background:rgba(255,107,157,0.14); }
+.link-pill.music { color:#80FFD4; border-color:rgba(80,255,212,0.3); }
+.link-pill.music:hover { background:rgba(80,255,212,0.12); }
+
 </style>
 </head>
 <body>
@@ -1014,20 +1287,25 @@ footer {
   <span class="sparkle" style="top:40%;left:4%;--spd:7s;--sd:1.5s;--sz:9px;--sc:#FFB3D1;"></span>
   <span class="sparkle" style="top:45%;right:5%;--spd:3.5s;--sd:3s;--sz:13px;--sc:#F5C842;"></span>
 
-  <div class="hero-badge r">🔥 期間限定・無料セミナー開催中 🔥</div>
-  <p class="hero-eyebrow r">✦ AI STRATEGY × DREAM LIFE ✦</p>
+  <div class="hero-badge r">📱 Instagram 運用代行</div>
+  <p class="hero-eyebrow r">✦ INSTAGRAM MANAGEMENT ✦</p>
   <h1 class="hero-title r">
-    <span class="line-1">頑張ってるのに<br>なぜか伸びない…</span>
-    <span class="line-2">その答えが、ここにある。</span>
-    <span class="line-3">夢を叶える時代が来た💫</span>
+    <span class="line-1">その投稿、</span>
+    <span class="line-2">「伝わる」に変える。</span>
+    <span class="line-3">Instagram、まるごとお任せ📱</span>
   </h1>
   <div class="hero-divider r"></div>
   <p class="hero-catch r">
-    単月<span class="gold">億超え</span>の実績を持つ白澤さんが、<br>
-    AI×戦略で<span class="pink">「勝ち組」</span>になるための<br>
-    たった一つのルールを<strong>無料で</strong>公開します🎁
+    「時間がない」「何を出せばいいか分からない」——<br>
+    <span class="gold">世界観づくり</span>から<span class="pink">リール制作・分析</span>まで、<br>
+    プロがあなたの発信を<strong>まるごと代行</strong>します✨
   </p>
-  <a href="#cta" class="hero-cta r">💌 今すぐ無料で詳細を受け取る</a>
+  <div class="hero-facts r">
+    <div class="hf"><div class="hf-n">¥50,000〜</div><div class="hf-l">月額</div></div>
+    <div class="hf"><div class="hf-n">¥50,000</div><div class="hf-l">初期費用</div></div>
+    <div class="hf"><div class="hf-n">全国OK</div><div class="hf-l">オンライン完結</div></div>
+  </div>
+  <a href="#price" class="hero-cta r">✨ 料金プランを見る</a>
 
   <div class="hero-scroll-hint">
     <span>SCROLL</span>
@@ -1042,188 +1320,12 @@ footer {
   </svg>
 </div>
 
-<!-- ===== PROBLEM ===== -->
-<section class="problem-bg">
-  <div class="section-inner">
-    <div class="section-star-label r"><span class="star-label-text">✦ RESONANCE ✦</span></div>
-    <h2 class="section-heading r">こんな<span class="gold-word">悩み</span>ない？</h2>
-    <p class="section-sub r">まず、あなたの現在地を確認しよう</p>
-    <div class="problem-cards">
-      <div class="p-card r"><span class="ico">😰</span><div class="txt">毎日必死に働いているのに、<em>全然稼げない</em>…なんで？</div></div>
-      <div class="p-card r r2"><span class="ico">📚</span><div class="txt">勉強しても勉強しても、<em>なぜか結果に繋がらない</em></div></div>
-      <div class="p-card r r3"><span class="ico">🚀</span><div class="txt">周りがどんどん結果を出している、<em>自分だけ取り残されてる気がする</em></div></div>
-      <div class="p-card r r4"><span class="ico">🤖</span><div class="txt">AIって聞くけど、<em>何を学べばいいかさっぱりわからない</em></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- wave -->
-<div class="wave">
-  <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:40px;background:#080820;">
-    <path d="M0,20 C360,50 720,0 1080,25 C1260,38 1380,10 1440,20 L1440,50 L0,50Z" fill="#0D0A28"/>
-  </svg>
-</div>
-
-<!-- ===== MANGA ===== -->
-<section class="manga-bg">
-  <div class="section-inner">
-    <div class="section-star-label r"><span class="star-label-text">✦ STORY ✦</span></div>
-    <h2 class="section-heading r">ある夜の<span class="gold-word">出会い</span></h2>
-    <p class="section-sub r">路上で起きた、人生の分岐点</p>
-
-    <!-- Strip 1 -->
-    <div class="manga-strip r">
-      <div class="s-panel night">
-        <div class="face face-guy eyes-tired"><span class="sweat">💧</span></div>
-        <div class="bbl bbl-white">頑張っているのに、<br><strong>全然稼げない……</strong><br><small style="color:#888;">(SALES REPORTを握りしめて)</small></div>
-      </div>
-      <div class="s-panel night" style="background:linear-gradient(135deg,#101028,#181038);">
-        <div class="face face-guy eyes-shock"><span class="sweat">💦</span></div>
-        <div class="bbl bbl-dark">このままじゃ、<em>本当にまずいかも……</em></div>
-      </div>
-      <div class="s-panel bright">
-        <div class="face face-mentor eyes-calm"></div>
-        <div class="bbl bbl-pink">少し、<em>話してもいいですか？</em>✨</div>
-      </div>
-    </div>
-
-    <!-- Strip 2 -->
-    <div class="manga-strip r">
-      <div class="s-panel bright">
-        <div class="face face-mentor eyes-calm"></div>
-        <div class="bbl bbl-gold">もし今、結果が出ずに苦しいなら、<em>見直すべきは努力量ではなく</em>、<strong>武器かもしれません。</strong></div>
-      </div>
-      <div class="s-panel night" style="background:linear-gradient(135deg,#0E0C20,#181030);">
-        <div class="face face-guy eyes-wow"><span class="sweat">💦</span></div>
-        <div class="bbl bbl-dark"><em>武器……ですか？</em></div>
-      </div>
-      <div class="s-panel bright">
-        <div class="face face-mentor eyes-calm"></div>
-        <div class="bbl bbl-pink">はい。今の時代は、<em>やり方そのものが</em><strong>大きく変わっています。</strong>⭐</div>
-      </div>
-    </div>
-
-    <!-- Strip 3 -->
-    <div class="manga-strip r">
-      <div class="s-panel ai-room">
-        <div class="ai-scene">
-          <div class="ai-monitor">🤖</div>
-          <div class="ai-tags">
-            <span class="ai-tag">AI Chat</span>
-            <span class="ai-tag">2025</span>
-            <span class="ai-tag">TOOL</span>
-          </div>
-        </div>
-        <div class="bbl bbl-white">僕が2025年からAIに注力しているのは、<em>一時的な流行ではない</em>と確信しているからです。</div>
-      </div>
-      <div class="s-panel ai-room" style="background:linear-gradient(135deg,#040C1C,#070F1E);">
-        <div class="ai-scene">
-          <div class="ai-tags" style="gap:4px;">
-            <span class="ai-tag">STUDY</span>
-            <span class="ai-tag">TEST</span>
-            <span class="ai-tag">BUILD</span>
-          </div>
-          <div style="font-size:10px;color:rgba(0,200,255,0.6);text-align:center;letter-spacing:1px;">毎日AI × 改善 × 独自ツール</div>
-        </div>
-        <div class="bbl bbl-white">今も毎日AIに触れ、学び、試し続け、<em>独自ツールまで</em>作っています。</div>
-      </div>
-      <div class="s-panel night" style="background:linear-gradient(135deg,#0A0820,#14103A);">
-        <div class="face face-guy eyes-wow"></div>
-        <div class="bbl bbl-dark">そこまで本気で<em>取り組んでいるんですね…</em></div>
-      </div>
-    </div>
-
-    <!-- Strip 4 -->
-    <div class="manga-strip r">
-      <div class="s-panel night">
-        <div class="face face-guy eyes-tired"></div>
-        <div class="bbl bbl-white">今のままで終わりたくない…<br><strong>何を学べばいいんでしょうか？</strong></div>
-      </div>
-      <div class="s-panel bright">
-        <div class="face face-mentor eyes-calm"></div>
-        <div class="bbl bbl-gold"><strong>白澤さんの無料セミナー</strong>では、最新AI情報と<em>これから何をすべきか</em>のヒントを無料で学べます🎁</div>
-      </div>
-      <div class="s-panel ai-room" style="background:linear-gradient(135deg,#040C14,#071018);">
-        <div class="ai-scene">
-          <div class="line-btn-mini">勝ち組</div>
-          <div style="font-size:10px;color:rgba(255,255,255,0.4);text-align:center;">👇 このLINEに送るだけ</div>
-        </div>
-        <div class="bbl bbl-pink">興味がある方は<em>「勝ち組」</em>とこのLINEに送ってください！<br>詳細をすぐにお送りします✉️</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- wave -->
-<div class="wave">
-  <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:40px;background:#0D0A28;">
-    <path d="M0,25 C300,0 600,50 900,20 C1100,5 1300,40 1440,25 L1440,50 L0,50Z" fill="#080020"/>
-  </svg>
-</div>
-
-<!-- ===== HOOK ===== -->
-<section class="hook-bg">
-  <div class="section-inner">
-    <div class="hook-center">
-      <div class="section-star-label r"><span class="star-label-text">✦ TURNING POINT ✦</span></div>
-      <h2 class="section-heading r">時代は<span class="gold-word">変わった</span></h2>
-      <p class="section-sub r">あなたはどちら側にいる？</p>
-      <div class="hook-vs r">
-        <div class="vs-item bad">努力量で勝つ時代</div>
-        <div class="vs-arrow">→</div>
-        <div class="vs-item good">⭐ 仕組みで静かに勝つ時代</div>
-      </div>
-      <div class="hook-big r">
-        AIを<span class="pink">「使う側」</span>ではなく、<br>
-        <span class="gold">「収益を生み出す側」</span>へ。<br>
-        あなたの夢は、<span class="gold">必ず叶う。</span>💫
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- wave -->
-<div class="wave">
-  <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:40px;background:#080020;">
-    <path d="M0,10 C180,40 360,0 540,20 C720,40 900,5 1080,25 C1260,45 1380,15 1440,10 L1440,50 L0,50Z" fill="#0D0A28"/>
-  </svg>
-</div>
-
-<!-- ===== BENEFIT ===== -->
-<section class="benefit-bg">
-  <div class="section-inner">
-    <div class="section-star-label r"><span class="star-label-text">✦ WHAT YOU'LL GET ✦</span></div>
-    <h2 class="section-heading r">セミナーで<span class="gold-word">学べること</span></h2>
-    <p class="section-sub r">無料なのに、この豪華内容</p>
-    <div class="benefit-list">
-      <div class="b-item r">
-        <div class="b-num">1</div>
-        <div class="b-text"><span class="b-tag">💡 最新情報</span><br>2025年、AIで何が起きているのか。<strong>最前線の情報</strong>をわかりやすく解説</div>
-      </div>
-      <div class="b-item r r2">
-        <div class="b-num">2</div>
-        <div class="b-text"><span class="b-tag" style="background:rgba(245,200,66,0.15);border-color:rgba(245,200,66,0.3);color:var(--gold2);">🧠 思考法</span><br>ただ情報を知るだけでなく、<strong>今の時代に必要な考え方・方向性</strong>まで見えてくる</div>
-      </div>
-      <div class="b-item r r3">
-        <div class="b-num">3</div>
-        <div class="b-text"><span class="b-tag" style="background:rgba(64,255,176,0.1);border-color:rgba(64,255,176,0.3);color:#80FFD4;">⚡ ルール</span><br>年商3億以下の事業者が<strong>勝ち残るために必要なたった一つのルール</strong></div>
-      </div>
-      <div class="b-item r r4">
-        <div class="b-num">4</div>
-        <div class="b-text"><span class="b-tag" style="background:rgba(160,160,255,0.1);border-color:rgba(160,160,255,0.3);color:#B0B0FF;">🚀 実績</span><br>単月<strong>億超え</strong>を達成した白澤さんのAI戦略を特別公開</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 <!-- ===== AMAKOMI KOU PROFILE ===== -->
 <section class="amakomi-section">
   <div class="section-inner" style="padding-bottom:0;">
-    <div class="section-star-label r"><span class="star-label-text">✦ ABOUT あまかみこう ✦</span></div>
-    <h2 class="section-heading r">この情報を届けているのは<br><span class="gold-word">あまかみこう</span>です</h2>
-    <p class="section-sub r">宇宙と言葉と本で、世界を変えにいく人</p>
+    <div class="section-star-label r"><span class="star-label-text">✦ WHO RUNS IT ✦</span></div>
+    <h2 class="section-heading r">あなたのInstagramを育てるのは<br><span class="gold-word">あまかみこう</span>です</h2>
+    <p class="section-sub r">言葉と世界観づくりのプロが、丁寧に運用します</p>
 
     <div class="amakomi-layout r">
 
@@ -1232,8 +1334,8 @@ footer {
         <div class="char-aura char-aura-2"></div>
         <div class="char-aura char-aura-1"></div>
         <img class="amakomi-char-img"
-             src="banner.jpg"
-             alt="あまかみこう キャラクター">
+             src="amakomi-profile.png"
+             alt="あまかみこう プロフィール写真">
       </div>
 
       <!-- 情報列 -->
@@ -1254,10 +1356,17 @@ footer {
           <div class="info-section-label">📍 PROFILE</div>
           <div class="amakomi-stats">
             <div class="stat-pill pink-pill">📍 北海道・札幌市</div>
-            <div class="stat-pill gold-pill">📚 <span class="num">約100冊</span> 出版</div>
-            <div class="stat-pill">🏢 事務職 <span class="num">25年</span> の経験</div>
-            <div class="stat-pill pink-pill">✍️ Kindle著者・プロデューサー</div>
+            <div class="stat-pill gold-pill">📚 <span class="num">116冊〜</span> 出版中</div>
+            <div class="stat-pill pink-pill">✍️ Kindle作家・出版プロデューサー</div>
+            <div class="stat-pill">🎨 AI漫画家</div>
           </div>
+        </div>
+
+        <!-- プロフィール文 -->
+        <div style="font-size:13.5px;line-height:2;color:rgba(255,255,255,0.78);">
+          本・漫画・音楽・言葉を通して、<strong style="color:var(--gold2);">「生きた証を次世代へ残す」</strong>。<br>
+          北海道から、日本へ。日本から、世界へ。<br>
+          Amazon・note・YouTube・Xなどで発信中📡
         </div>
 
         <!-- 活動内容 -->
@@ -1265,10 +1374,10 @@ footer {
           <div class="info-section-label">⚡ ACTIVITIES</div>
           <div class="activity-grid">
             <span class="act-tag pub">📖 出版プロデュース</span>
-            <span class="act-tag yt">▶ YouTubeチャンネル<br>あまこうちゃんねる</span>
-            <span class="act-tag ful">⚛ フラーレングッズ制作・販売</span>
-            <span class="act-tag com">🌐 G-Next Club 主宰</span>
-            <span class="act-tag sem">🎤 セミナー登壇</span>
+            <span class="act-tag com">🎨 AI漫画・漫画動画</span>
+            <span class="act-tag yt">▶ YouTube あまこうちゃんねる</span>
+            <span class="act-tag ful">🎵 音楽制作（Spotify配信）</span>
+            <span class="act-tag sem">🏢 BlueHandsEagle13出版社 運営</span>
           </div>
         </div>
 
@@ -1276,29 +1385,49 @@ footer {
         <div>
           <div class="info-section-label">🚀 NOW CREATING</div>
           <div class="wip-list">
-            <div class="wip-item"><div class="wip-dot"></div>『ぼくの名前は飛雄馬。未来を変える小さな手。』</div>
-            <div class="wip-item"><div class="wip-dot"></div>香道×サラリーマン向けKindle本（東野圭吾スタイル）</div>
-            <div class="wip-item"><div class="wip-dot"></div>ツインソウルシリーズ「銀河の羅針盤」</div>
+            <div class="wip-item"><div class="wip-dot"></div><strong style="color:#fff;">嵐神の印シリーズ</strong>（最新作）</div>
             <div class="wip-item"><div class="wip-dot"></div>絵本『いのちの糸をつむぐよ』（蚕と命のお話）</div>
+            <div class="wip-item"><div class="wip-dot"></div>ツインソウルシリーズ「銀河の羅針盤」</div>
+            <div class="wip-item"><div class="wip-dot"></div>『ぼくの名前は飛雄馬。未来を変える小さな手。』</div>
           </div>
         </div>
 
-        <!-- 世界観タグ -->
+        <!-- SNS・リンク -->
         <div>
-          <div class="info-section-label">🌌 WORLD KEYWORDS</div>
+          <div class="info-section-label">🔗 LINKS</div>
+          <div class="amakomi-links">
+            <a class="link-pill" href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" rel="noopener">💬 LINE</a>
+            <a class="link-pill" href="https://twitter.com/myoco9883" target="_blank" rel="noopener">𝕏 X</a>
+            <a class="link-pill" href="https://note.com/globalkouamakami" target="_blank" rel="noopener">📝 note</a>
+            <a class="link-pill" href="https://www.youtube.com/@myomyoco7457/shorts" target="_blank" rel="noopener">▶ YouTube</a>
+            <a class="link-pill" href="https://amzn.to/4fUsSUa" target="_blank" rel="noopener">📚 Amazon</a>
+            <a class="link-pill" href="https://ornate-cocada-78c053.netlify.app/" target="_blank" rel="noopener">🎨 絵本プロジェクト</a>
+            <a class="link-pill" href="https://bluehandseagle13.netlify.app/" target="_blank" rel="noopener">🏢 出版社サイト</a>
+          </div>
+          <div class="amakomi-links" style="margin-top:8px;">
+            <a class="link-pill music" href="https://open.spotify.com/intl-ja/track/1DrufAgt92aHjRWGmeZUKL?si=bd417aa3f5944f1a" target="_blank" rel="noopener">🎵 GOLDEN WAVE</a>
+            <a class="link-pill music" href="https://open.spotify.com/intl-ja/album/2duYN0G563gztYGPZly4b7?si=_amKJ3u9RjSllALIp0g7Gw" target="_blank" rel="noopener">🎵 ムゲントピア</a>
+          </div>
+        </div>
+
+        <!-- ハッシュタグ -->
+        <div>
+          <div class="info-section-label">🏷 HASHTAGS</div>
           <div class="world-tags">
-            <span class="world-tag">#宇宙</span>
-            <span class="world-tag">#スピリチュアル</span>
-            <span class="world-tag">#都市伝説</span>
-            <span class="world-tag">#引き寄せ</span>
-            <span class="world-tag">#ツインソウル</span>
-            <span class="world-tag">#量子力学</span>
-            <span class="world-tag">#AI×出版</span>
-            <span class="world-tag">#フラーレン</span>
-            <span class="world-tag">#超常現象</span>
-            <span class="world-tag">#Trance&EDM</span>
+            <span class="world-tag">#あまかみこう</span>
+            <span class="world-tag">#Kindle作家</span>
+            <span class="world-tag">#Kindle出版</span>
+            <span class="world-tag">#AI漫画</span>
+            <span class="world-tag">#漫画動画</span>
+            <span class="world-tag">#感動漫画</span>
+            <span class="world-tag">#生きた証を次世代へ</span>
+            <span class="world-tag">#BlueHandsEagle13</span>
+            <span class="world-tag">#北海道</span>
+            <span class="world-tag">#札幌</span>
+            <span class="world-tag">#挑戦</span>
             <span class="world-tag">#言葉の力</span>
-            <span class="world-tag">#絵本</span>
+            <span class="world-tag">#愛</span>
+            <span class="world-tag">#絆</span>
           </div>
         </div>
 
@@ -1309,10 +1438,10 @@ footer {
     <div class="mission-block r" style="max-width:760px;margin:30px auto 0;">
       <div class="mission-label">✦ MISSION &amp; VISION ✦</div>
       <div class="mission-text">
-        わたしが本をつくり続けるのは、<span class="em">「あなたの一日を、1分でも明るくしたい」</span>から。<br>
-        宇宙の広さと言葉の深さを武器に、<span class="em">100年後も残る作品</span>を世界へ届ける。<br>
+        わたしが本・漫画・音楽・言葉をつくり続けるのは、<span class="em">「生きた証を次世代へ残す」</span>ため。<br>
+        北海道から、日本へ。日本から、世界へ。<br>
         AIと人間の創造力が融合する今この時代に、<br>
-        <span class="em">「あなたの物語を、本という宇宙船に乗せて宇宙へ飛ばす」</span>——<br>
+        <span class="em">「あなたの物語を、作品という船に乗せて未来へ届ける」</span>——<br>
         それがBlueHandsEagle13出版のミッションです。
       </div>
     </div>
@@ -1323,138 +1452,192 @@ footer {
   <div class="core-phrase-wrapper r">
     <div class="core-phrase-label">✦ CORE MESSAGE ✦</div>
     <div class="core-phrase">
-      <span class="cp-line">ソレデモ<span class="slash"> ／ </span></span>
-      <span class="cp-line gold-line">ここまで　来た</span>
-      <span class="cp-line pink-line">この一日は</span>
-      <span class="cp-line">消えていない<span class="slash"> —</span></span>
+      <span class="cp-line">いつも</span>
+      <span class="cp-line gold-line">あなたの</span>
+      <span class="cp-line pink-line">すぐそばに</span>
     </div>
     <div class="core-phrase-sub">
-      どんな夜も、あなたが生きたこの一日は永遠に輝き続ける。<br>
-      あなたの物語は、まだ書き終わっていない。
+      本と言葉と、Instagramで。<br>
+      あなたの毎日に、そっと寄り添います🌸
     </div>
   </div>
 
   <!-- QR / LINE オープンチャット -->
   <div class="qr-section r">
-    <div class="qr-label">💬 LINE オープンチャット</div>
-    <div class="qr-title">G-Next Club<br>あまかみこうと宇宙の話をしよう</div>
+    <div class="qr-label">💬 お問い合わせ・ご相談</div>
+    <div class="qr-title">Instagram運用代行の<br>ご相談はLINEから🌟</div>
     <img class="qr-img"
          src="char.png"
-         alt="LINE オープンチャット QRコード">
+         alt="LINE QRコード">
     <div class="qr-hint">
-      QRコードを読み取るか、<br>下のリンクから直接参加できます🌟<br><a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" style="color:var(--pink-light);font-weight:800;font-size:12px;word-break:break-all;">👉 G-Next Club オープンチャット</a>
+      下のリンクから、お気軽にメッセージください👇<br>
+      <a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" style="color:#8BFF9A;font-weight:800;font-size:14px;word-break:break-all;">👉 燃え上がれ🔥あまかみこう🔥<br>（LINEオープンチャット）</a>
     </div>
   </div>
 
   <div style="height:60px;"></div>
 </section>
 
-<!-- ===== PROFILE ===== -->
-<section class="profile-bg">
+<!-- ===== INSTAGRAM PRICING ===== -->
+<section class="insta-bg" id="price">
   <div class="section-inner">
-    <div class="section-star-label r"><span class="star-label-text">✦ SPEAKER ✦</span></div>
-    <h2 class="section-heading r">登壇者<span class="gold-word">プロフィール</span></h2>
-    <p class="section-sub r">本物の実績が語る、だから信頼できる</p>
-    <div class="profile-card r">
+    <div class="section-star-label r"><span class="star-label-text">✦ INSTAGRAM SERVICE ✦</span></div>
+    <h2 class="section-heading r">Instagram<span class="gold-word">運用代行</span>・料金</h2>
+    <p class="section-sub r">アカウント構築から毎月の運用まで、まるごとお任せ</p>
 
-      <!-- バナー画像 -->
-      <div style="width:100%;border-radius:14px;overflow:hidden;margin-bottom:20px;position:relative;z-index:1;box-shadow:0 8px 30px rgba(0,0,0,0.5);">
-        <img src="qr.jpg" alt="白澤慶幸さん 億サロンの教科書" style="width:100%;height:auto;display:block;border-radius:14px;">
-      </div>
+    <p class="insta-intro r">
+      「投稿する時間がない」「何を出せばいいかわからない」——<br>
+      そんな方のために、<span class="pink">世界観づくり</span>から<span class="gold">リール制作・分析</span>まで代行します📱✨
+    </p>
 
-      <div class="profile-name" style="font-size:26px;">白澤 慶幸 さん</div>
-      <div class="profile-role">AI戦略家 / 実業家 / 億サロン主宰</div>
-      <div class="profile-tags">
-        <span class="p-tag">AI2.0プロモーター</span>
-        <span class="p-tag">Kindle著者</span>
-        <span class="p-tag">億サロン主宰</span>
-        <span class="p-tag">単月億超え</span>
-      </div>
-      <div class="profile-result">
-        <div class="result-big" style="font-size:24px;">10倍売上 × 10倍時短 <span style="-webkit-text-fill-color:white;color:white;font-size:28px;">=100x</span></div>
-        <div class="result-label">✨ 100倍の効果を生み出すAI2.0プロモーター</div>
-      </div>
-
-      <!-- あまかみこう personal note -->
-      <div class="r" style="
-        background:rgba(255,107,157,0.08);
-        border:1px solid rgba(255,107,157,0.25);
-        border-left:3px solid var(--pink);
-        border-radius:0 16px 16px 0;
-        padding:20px 22px;
-        margin-top:16px;
-        position:relative;
-        z-index:1;
-      ">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
-          <span style="font-size:20px;">💕</span>
-          <span style="font-size:11px;font-weight:800;color:var(--pink-light);letter-spacing:3px;">あまかみこうより</span>
-        </div>
-        <p style="font-size:14px;line-height:2.1;color:rgba(255,255,255,0.85);">
-          2025年、わたしはKindle本の出版や漫画づくりを通して、<br>
-          白澤さんが主宰する <strong style="color:var(--gold2);">「億サロ」</strong> というコミュニティに参加させていただきました。<br><br>
-          学んだこと、出会った仲間、広がった景色——<br>
-          <span style="color:var(--pink-light);font-weight:800;">本当に、世界が変わったと感じた一年でした。</span>💫<br><br>
-          そして2026年、新たな募集が始まります。<br>
-          もしあなたが今、<strong style="color:#fff;">「変わりたい」「次のステージへ行きたい」</strong>と感じているなら——<br>
-          これは、あなたへのメッセージかもしれません。🌟
-        </p>
-        <div style="margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,107,157,0.2);
-          font-size:12px;color:rgba(255,255,255,0.35);font-style:italic;letter-spacing:1px;text-align:right;">
-          ソレデモ／ここまで来た／この一日は／消えていない — あまかみ こう
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== CTA ===== -->
-<section class="cta-bg" id="cta">
-  <div class="cta-aurora"></div>
-  <div class="section-inner" style="text-align:center;">
-    <div class="section-star-label r"><span class="star-label-text">✦ YOUR MOMENT ✦</span></div>
-    <div class="cta-free r">🎁 完全無料</div>
-    <h2 class="cta-title r">
-      <span class="gold">夢を叶える</span>ために、<br>
-      今すぐ<span class="pink">最初の一歩</span>を踏み出そう💫
-    </h2>
-    <p class="cta-sub r">残り枠あり。今動いた人だけが変わる。</p>
-
-    <div class="countdown r" id="countdown">
-      <div class="cd-unit"><div class="cd-num" id="cdD">--</div><div class="cd-lbl">日</div></div>
-      <div class="cd-unit"><div class="cd-num" id="cdH">--</div><div class="cd-lbl">時間</div></div>
-      <div class="cd-unit"><div class="cd-num" id="cdM">--</div><div class="cd-lbl">分</div></div>
-      <div class="cd-unit"><div class="cd-num" id="cdS">--</div><div class="cd-lbl">秒</div></div>
+    <!-- こんな方におすすめ -->
+    <h3 class="insta-subhead r">こんな方に<span class="g">おすすめ</span></h3>
+    <p class="insta-subhead-sub r">✦ FOR YOU ✦</p>
+    <div class="insta-reco">
+      <div class="reco-item r"><div class="reco-ico">😵‍💫</div><div class="reco-txt">投稿する時間がなくて、更新がずっと止まっている</div></div>
+      <div class="reco-item r r2"><div class="reco-ico">🤔</div><div class="reco-txt">何を投稿すればいいか、正直よく分からない</div></div>
+      <div class="reco-item r r3"><div class="reco-ico">📉</div><div class="reco-txt">自己流でやってきたけど、フォロワーが伸びない</div></div>
+      <div class="reco-item r r4"><div class="reco-ico">🎬</div><div class="reco-txt">リール（動画）を出したいけど、手が回らない</div></div>
     </div>
 
-    <ul class="checklist r">
-      <li class="check-row"><span class="check-circle">✓</span>参加費・受講料：<strong>完全無料</strong></li>
-      <li class="check-row"><span class="check-circle">✓</span>スマホ1台で参加OK</li>
-      <li class="check-row"><span class="check-circle">✓</span>AI未経験・初心者でも大丈夫 🌟</li>
-      <li class="check-row"><span class="check-circle">✓</span>「勝ち組」とLINEに送るだけ！</li>
-    </ul>
+    <div class="price-note-top r">
+      💬 表示価格は<strong>目安</strong>です。正式な料金は内容に合わせて、<strong>まずは無料相談</strong>でご案内します。
+    </div>
 
-    <a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" class="cta-btn r" style="text-decoration:none;display:inline-block;">
-      💌 今すぐ LINE オープンチャットへ参加する
-    </a>
+    <div class="price-grid">
+      <!-- Light -->
+      <div class="price-card r">
+        <div class="price-plan">LIGHT ／ ライト</div>
+        <div class="price-amount"><span class="yen">¥</span><span class="num">50,000</span><span class="per"> 〜 / 月</span></div>
+        <div class="price-tax">税込 ¥55,000〜</div>
+        <div class="price-setup">＋ 初期費用 ¥50,000</div>
+        <div class="price-desc">まずは小さく始めたい方へ。<br>投稿の土台を安定させるプラン</div>
+        <ul class="price-feat">
+          <li><span class="fc">✦</span><span>フィード投稿 <strong>月8本</strong>（週2）</span></li>
+          <li><span class="fc">✦</span><span>キャプション・ハッシュタグ作成</span></li>
+          <li><span class="fc">✦</span><span>ストーリーズ 月4本</span></li>
+          <li><span class="fc">✦</span><span>月1回の簡易レポート</span></li>
+        </ul>
+        <a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" rel="noopener" class="price-cta"><span class="li-ico">💬</span>LINEで相談する</a>
+      </div>
 
-    <a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" class="cta-line r" style="text-decoration:none;cursor:pointer;display:flex;max-width:400px;margin:24px auto 0;background:rgba(0,185,0,0.1);border:1px solid rgba(0,185,0,0.35);border-radius:16px;padding:16px 20px;align-items:center;gap:12px;justify-content:center;position:relative;z-index:1;transition:background 0.2s;">
-      <div class="line-ico">💬</div>
-      <div class="cta-line-txt">タップしてLINEオープンチャット<br><strong>「G-Next Club」</strong>へ直接参加🌟<br><span style="font-size:11px;color:rgba(255,255,255,0.45);">無料・いつでも退会OK</span></div>
-    </a>
-    <p class="cta-note r">※ 無理な勧誘は一切ありません。いつでも退会できます。</p>
+      <!-- Standard (featured) -->
+      <div class="price-card featured r r2">
+        <div class="price-badge">⭐ 一番人気</div>
+        <div class="price-plan">STANDARD ／ スタンダード</div>
+        <div class="price-amount"><span class="yen">¥</span><span class="num">150,000</span><span class="per"> 〜 / 月</span></div>
+        <div class="price-tax">税込 ¥165,000〜</div>
+        <div class="price-setup">＋ 初期費用 ¥50,000</div>
+        <div class="price-desc">伸ばしたい方の定番。<br>リール制作込みでしっかり運用</div>
+        <ul class="price-feat">
+          <li><span class="fc">✦</span><span>フィード投稿 <strong>月12本</strong></span></li>
+          <li><span class="fc">✦</span><span>リール制作 <strong>月4本</strong></span></li>
+          <li><span class="fc">✦</span><span>ストーリーズ 月8本</span></li>
+          <li><span class="fc">✦</span><span>毎月の分析レポート＋改善提案</span></li>
+          <li><span class="fc">✦</span><span>コメント・DM一次対応</span></li>
+        </ul>
+        <a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" rel="noopener" class="price-cta"><span class="li-ico">💬</span>LINEで相談する</a>
+      </div>
+
+      <!-- Full -->
+      <div class="price-card r r3">
+        <div class="price-plan">FULL ／ フル運用</div>
+        <div class="price-amount"><span class="yen">¥</span><span class="num">300,000</span><span class="per"> 〜 / 月</span></div>
+        <div class="price-tax">税込 ¥330,000〜</div>
+        <div class="price-setup included">🎁 初期費用コミコミ</div>
+        <div class="price-desc">本気で育てたい方へ。<br>戦略・撮影まで一気通貫</div>
+        <ul class="price-feat">
+          <li><span class="fc">✦</span><span>戦略設計・運用方針づくり</span></li>
+          <li><span class="fc">✦</span><span>リール量産 <strong>月8本〜</strong></span></li>
+          <li><span class="fc">✦</span><span>撮影・素材制作ディレクション</span></li>
+          <li><span class="fc">✦</span><span>フィード・ストーリーズ無制限相談</span></li>
+          <li><span class="fc">✦</span><span>毎月の改善ミーティング</span></li>
+        </ul>
+        <a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" rel="noopener" class="price-cta"><span class="li-ico">💬</span>LINEで相談する</a>
+      </div>
+    </div>
+
+    <!-- setup fee + unit price reference -->
+    <div class="insta-notes">
+      <div class="insta-note-card r">
+        <div class="nt">🏗 初期費用 ¥50,000 に含まれるもの（一度きり）</div>
+        <div class="nrow"><span>アカウント初期設定・引き継ぎ</span><span class="np">✓</span></div>
+        <div class="nrow"><span>プロフィール＋世界観デザイン</span><span class="np">✓</span></div>
+        <div class="nrow"><span>投稿テンプレ・ハッシュタグ設計</span><span class="np">✓</span></div>
+      </div>
+      <div class="insta-note-card r r2">
+        <div class="nt">📊 1回の単発でもOK！<span style="font-weight:700;color:rgba(255,255,255,0.55);">（スポット単価の目安）</span></div>
+        <div class="nrow"><span>フィード画像</span><span class="np">¥3,000〜1万 / 本</span></div>
+        <div class="nrow"><span>リール（動画）</span><span class="np">¥1.5〜5万 / 本</span></div>
+        <div class="nrow"><span>ストーリーズ</span><span class="np">¥1,000〜3,000 / 本</span></div>
+        <div style="margin-top:12px;font-size:12px;color:var(--gold2);font-weight:800;text-align:center;line-height:1.6;">💬 1本からでもお受けします。お気軽にご相談ください！</div>
+      </div>
+    </div>
+
+    <!-- ご依頼の流れ -->
+    <h3 class="insta-subhead r">ご依頼の<span class="g">流れ</span></h3>
+    <p class="insta-subhead-sub r">✦ HOW TO START ✦</p>
+    <div class="flow-grid">
+      <div class="flow-step r"><div class="flow-num">1</div><div class="flow-ttl">LINEで相談</div><div class="flow-desc">ボタンから友だち追加して無料相談</div></div>
+      <div class="flow-step r r2"><div class="flow-num">2</div><div class="flow-ttl">ヒアリング</div><div class="flow-desc">目的・ご予算をおうかがい</div></div>
+      <div class="flow-step r r3"><div class="flow-num">3</div><div class="flow-ttl">プラン提案</div><div class="flow-desc">最適なプランをご提案</div></div>
+      <div class="flow-step r r4"><div class="flow-num">4</div><div class="flow-ttl">運用スタート</div><div class="flow-desc">初期構築のあと運用開始🚀</div></div>
+    </div>
+
+    <!-- よくあるご質問 -->
+    <h3 class="insta-subhead r">よくある<span class="g">ご質問</span></h3>
+    <p class="insta-subhead-sub r">✦ FAQ ✦</p>
+    <div class="faq-list">
+      <div class="faq-item r">
+        <div class="faq-q"><span class="qm">Q</span><span>最低契約期間はありますか？</span></div>
+        <div class="faq-a"><span class="am">A</span><span>基本は3ヶ月〜ですが、ご事情に合わせて柔軟にご相談に応じます。</span></div>
+      </div>
+      <div class="faq-item r r2">
+        <div class="faq-q"><span class="qm">Q</span><span>写真や素材がなくても大丈夫ですか？</span></div>
+        <div class="faq-a"><span class="am">A</span><span>はい。撮影・素材づくりからサポートできます（フル運用がおすすめ）。</span></div>
+      </div>
+      <div class="faq-item r r3">
+        <div class="faq-q"><span class="qm">Q</span><span>途中でプランを変更できますか？</span></div>
+        <div class="faq-a"><span class="am">A</span><span>はい。運用状況に合わせて、いつでもプラン変更できます。</span></div>
+      </div>
+      <div class="faq-item r r4">
+        <div class="faq-q"><span class="qm">Q</span><span>地方・遠方でも依頼できますか？</span></div>
+        <div class="faq-a"><span class="am">A</span><span>オンライン完結なので、全国どこからでもご依頼いただけます🌏</span></div>
+      </div>
+    </div>
+
+    <!-- what to confirm -->
+    <div class="insta-check r">
+      <div class="ct">✅ ご契約前に必ず確認してください</div>
+      <ul>
+        <li>投稿の本数・種類が明記されているか</li>
+        <li>撮影・素材の提供はどちらが行うか</li>
+        <li>レポートの有無と頻度</li>
+        <li>アカウントの所有権・ログイン情報はご自身が保持</li>
+        <li>最低契約期間（3〜6ヶ月が一般的）</li>
+      </ul>
+    </div>
+
+    <p class="section-sub r" style="margin-top:30px;margin-bottom:0;">
+      ※ 料金は内容により変動します。まずはお気軽にLINEでご相談ください🌟
+    </p>
+
+    <!-- 最終CTA（光るボタン） -->
+    <div class="insta-final-cta r">
+      <a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" rel="noopener" class="final-cta-btn"><span class="fc-ico">💬</span>今すぐ LINEで無料相談する</a>
+      <div class="final-cta-note">✦ 相談・お見積りは無料。しつこい勧誘は一切ありません ✦</div>
+    </div>
   </div>
 </section>
 
 <!-- ===== FOOTER ===== -->
 <footer>
-  <div class="footer-logo">💫 あまかみこう × AI戦略シェア会</div>
+  <div class="footer-logo">📱 あまかみこう Instagram運用代行</div>
   <div class="footer-txt">
     BlueHandsEagle13出版<br>
-    © 2025 All Rights Reserved.<br><a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" style="color:var(--pink-light);font-size:12px;font-weight:700;">💬 LINEオープンチャット G-Next Club</a>
+    © 2026 All Rights Reserved.<br><a href="https://line.me/ti/g2/JvLPMiu6Q-fk_4aVtpvVCL1idG7lss-eVQaYow?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" style="color:var(--pink-light);font-size:12px;font-weight:700;">💬 LINEオープンチャット「燃え上がれ🔥あまかみこう🔥」</a>
   </div>
-  <div class="footer-phrase">ソレデモ／ここまで来た／この一日は／消えていない</div>
+  <div class="footer-phrase">いつも、あなたのすぐそばに🌸</div>
 </footer>
 
 </div><!-- /page-wrap -->
@@ -1575,6 +1758,7 @@ reveals.forEach(r => io.observe(r));
 
 // ===== COUNTDOWN =====
 function updateCd() {
+  if (!document.getElementById('cdD')) return;
   const target = new Date();
   target.setDate(target.getDate() + 3);
   target.setHours(20, 0, 0, 0);
